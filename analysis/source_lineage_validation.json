@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "audit_scope": "Analytical numerical-lineage comparison; not a finite-element validation.",
+  "historical_analytical_seeds": {
+    "design": 2026101601,
+    "ood_design": 2026101602,
+    "noise": 2026101604,
+    "split": 2026101603
+  },
+  "training_seeds_are_separate": [
+    40,
+    41,
+    42
+  ],
+  "paired_bootstrap_seed_is_separate": 43,
+  "rows_compared": 9000,
+  "numeric_fields_compared": [
+    "width_mm",
+    "thickness_mm",
+    "span_mm",
+    "punch_radius_mm",
+    "support_radius_mm",
+    "prebend_stroke_mm",
+    "reference_stroke_mm",
+    "clean_reference_stroke_mm",
+    "noise_std_mm"
+  ],
+  "numeric_values_compared": 81000,
+  "matching_numeric_values": 81000,
+  "matching_rows_all_nine_fields": 9000,
+  "matching_partition_assignments": 9000,
+  "maximum_absolute_difference": 9.947598300641403e-13,
+  "maximum_absolute_difference_by_field": {
+    "width_mm": 9.947598300641403e-14,
+    "thickness_mm": 9.769962616701378e-15,
+    "span_mm": 9.947598300641403e-13,
+    "punch_radius_mm": 9.947598300641403e-14,
+    "support_radius_mm": 9.947598300641403e-14,
+    "prebend_stroke_mm": 9.947598300641403e-14,
+    "reference_stroke_mm": 9.947598300641403e-14,
+    "clean_reference_stroke_mm": 9.947598300641403e-14,
+    "noise_std_mm": 9.853229343548264e-16
+  },
+  "tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-10
+  },
+  "canonical_dataset_sha256": "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b",
+  "canonical_dataset_unchanged": true,
+  "native_solver_invoked": false,
+  "reconstructed_values_used_for_model_fitting": false,
+  "interpretation": "The supplied numeric table reproduces the disclosed analytical development design/response within Excel precision; this comparison does not establish independent FE records."
+}

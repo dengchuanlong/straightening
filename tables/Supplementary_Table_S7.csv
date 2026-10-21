@@ -1,0 +1,9 @@
+﻿Configuration,VAL MAE mm,Eval MAE mm,Eval RMSE mm,ΔRMSE mm
+MGRE full,0.054629,0.0550 ± 0.0001,0.0714 ± 0.0002,+0.00000
+No predictor ratios,0.054757,0.0560 ± 0.0003,0.0727 ± 0.0003,+0.00127
+No residual prior,0.057054,0.0574 ± 0.0005,0.0747 ± 0.0007,+0.00327
+No mechanics representation,0.057707,0.0589 ± 0.0004,0.0770 ± 0.0012,+0.00557
+No GMM gate,0.054442,0.0550,0.0716,+0.00017
+No global branch,0.065593,0.0663 ± 0.0024,0.0844 ± 0.0027,+0.01297
+No local branch,0.056413,0.0568,0.0742,+0.00279
+Constant interval scale,0.054629,0.0550 ± 0.0001,0.0714 ± 0.0002,+0.00000

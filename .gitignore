@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+models/
+qa/
+*.docx
+*.pdf
+~$*
+analysis/results.json
+analysis/evaluation_predictions.csv
+analysis/prediction_replay.json
+figures/*.png
+figures/*.svg

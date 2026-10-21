@@ -1,0 +1,8 @@
+﻿Family,Selected setting,Final mean VAL MAE mm
+Training mean,Training target mean,1.579602
+Ridge regression,alpha=0.01,0.178043
+RBF SVR,C=32.0; gamma=0.08,0.054395
+Random forest,min_samples_leaf=1,0.127961
+Histogram gradient boosting,max_leaf_nodes=31,0.077160
+Multilayer perceptron,alpha=0.001,0.069967
+MGRE,3 local HGB + global RBF SVR; validation blend,0.054629

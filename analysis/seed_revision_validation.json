@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "training_seeds": [
+    40,
+    41,
+    42
+  ],
+  "bootstrap_seed": 43,
+  "model_seed_records": 42,
+  "learning_curve_records": 36,
+  "source_script_and_data_hashes_match": true,
+  "checks": [
+    {
+      "split": "test",
+      "seed": 43,
+      "bootstrap_resamples": 1000,
+      "fixed_mean_across_seed_predictions": true,
+      "maximum_CI_difference": 0.0
+    },
+    {
+      "split": "ood",
+      "seed": 43,
+      "bootstrap_resamples": 1000,
+      "fixed_mean_across_seed_predictions": true,
+      "maximum_CI_difference": 0.0
+    }
+  ],
+  "claims_scope": "Reproduction of the recorded numerical benchmark, not verification of FE provenance."
+}

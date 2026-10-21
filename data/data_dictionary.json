@@ -1,0 +1,42 @@
+{
+  "features": [
+    "width_mm",
+    "thickness_mm",
+    "span_mm",
+    "punch_radius_mm",
+    "support_radius_mm",
+    "prebend_stroke_mm"
+  ],
+  "target": "reference_stroke_mm",
+  "unit": "mm",
+  "splits": {
+    "train": 4800,
+    "validation": 1200,
+    "calibration": 1000,
+    "test": 1000,
+    "ood": 1000
+  },
+  "row_count": 9000,
+  "data_origin": "AUTHOR_SUPPLIED_PROVENANCE_PENDING",
+  "source_workbook_sha256": "171aee2faac094fb6b0ffd912c7c881ab458a8bea03a16ce21168a3a79595274",
+  "source_sheet": "dataset",
+  "source_excel_columns": {
+    "width_mm": "E",
+    "thickness_mm": "F",
+    "span_mm": "G",
+    "punch_radius_mm": "H",
+    "support_radius_mm": "I",
+    "prebend_stroke_mm": "J",
+    "reference_stroke_mm": "K"
+  },
+  "source_rows": [
+    2,
+    9001
+  ],
+  "excluded_diagnostic_columns": [
+    "L",
+    "M"
+  ],
+  "provenance": "Native FE evidence pending. Numerical values coincide with the prior analytical development table to Excel precision; not independent verified FE measurements.",
+  "canonical_json_sha256": "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b"
+}

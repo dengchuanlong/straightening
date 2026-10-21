@@ -1,0 +1,7 @@
+﻿Symbol,Input,Reference domain,Thickness-shift group,Unit
+b,Width,30–40,30–40,mm
+h,Thickness,7–9,9.25–10,mm
+L,Correction span,180–260,180–260,mm
+Rp,Punch radius,10–25,10–25,mm
+Rs,Support radius,10–25,10–25,mm
+u,Peak pre-bend stroke,12–16,12–16,mm

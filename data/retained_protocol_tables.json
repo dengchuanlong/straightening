@@ -1,0 +1,175 @@
+{
+  "tables": [
+    {
+      "type": "table",
+      "id": "Supplementary Table S1",
+      "headers": [
+        "Source field or evidence",
+        "Recorded role",
+        "Use in this analysis"
+      ],
+      "rows": [
+        [
+          "Columns E–J",
+          "Six positive numeric inputs in mm",
+          "Only fitted predictor inputs"
+        ],
+        [
+          "Column K",
+          "reference_stroke_mm",
+          "Unchanged supervised label; FE feasibility/optimality unverified"
+        ],
+        [
+          "Columns L–M",
+          "clean reference and noise scale",
+          "Legacy analytical diagnostics; excluded from fitting, selection and calibration"
+        ],
+        [
+          "Columns A–D",
+          "IDs, split and supplied origin text",
+          "Retained source metadata; origin text is not solver evidence"
+        ],
+        [
+          "Source group cells B1410/B5947",
+          "Excel-converted numeric identifiers",
+          "Original values retained; numerical-row group hashes computed"
+        ],
+        [
+          "9,000 × 9 numeric comparison",
+          "All rows match prior analytical table",
+          "Maximum difference 9.95e-13; documented lineage conflict retained"
+        ],
+        [
+          "Native FE inputs/results",
+          "Not yet linked to this workbook",
+          "No confirmed solver settings, labels, convergence or unloaded error"
+        ],
+        [
+          "Prior material/bending sources",
+          "Historical separate study evidence",
+          "Not attributed to these 9,000 rows without case-level links"
+        ]
+      ],
+      "widths": [
+        1.8,
+        2.05,
+        2.85
+      ],
+      "font": 9.5,
+      "source_id": "Supplementary Table S1",
+      "caption": "Supplementary Table S1. Source fields and partition roles. Diagnostic columns are excluded from predictors and targets used in fitting.",
+      "historical_static_table": true
+    }
+  ],
+  "table_widths": {
+    "Table 1": [
+      0.75,
+      2,
+      1.4,
+      1.7,
+      0.85
+    ],
+    "Table 2": [
+      2.05,
+      0.94,
+      0.94,
+      0.87,
+      0.95,
+      0.95
+    ],
+    "Supplementary Table S1": [
+      1.8,
+      2.05,
+      2.85
+    ],
+    "Supplementary Table S2": [
+      1.05,
+      0.55,
+      1.55,
+      1.85,
+      1.7
+    ],
+    "Supplementary Table S3": [
+      1.35,
+      0.8,
+      0.8,
+      1.5,
+      2.25
+    ],
+    "Supplementary Table S4": [
+      3.7,
+      1.5,
+      1.5
+    ],
+    "Supplementary Table S5": [
+      1.65,
+      3.5,
+      1.55
+    ],
+    "Supplementary Table S6": [
+      0.9,
+      0.75,
+      2.05,
+      3.0
+    ],
+    "Supplementary Table S7": [
+      2.1,
+      1.1,
+      1.1,
+      1.3,
+      1.1
+    ],
+    "Supplementary Table S8": [
+      0.95,
+      1.35,
+      1.4,
+      1.45,
+      1.55
+    ],
+    "Supplementary Table S9": [
+      0.65,
+      1.95,
+      0.9,
+      1.0,
+      1.05,
+      1.15
+    ],
+    "Supplementary Table S10": [
+      2.0,
+      0.9,
+      0.95,
+      0.95,
+      0.9,
+      1.0
+    ],
+    "Supplementary Table S11": [
+      0.9,
+      1.35,
+      0.6,
+      1.75,
+      2.2
+    ],
+    "Supplementary Table S12": [
+      0.6,
+      0.7,
+      1.1,
+      0.8,
+      1.6,
+      1.9
+    ],
+    "Supplementary Table S13": [
+      3.0,
+      2.85,
+      0.85
+    ],
+    "Supplementary Table S14": [
+      1.05,
+      2.8,
+      2.85
+    ],
+    "Supplementary Table S15": [
+      2.05,
+      4.65
+    ]
+  }
+}

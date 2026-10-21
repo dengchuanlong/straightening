@@ -1,0 +1,15 @@
+﻿Configuration,MAE mm,RMSE mm,R²,C90 %,W90 mm
+Training mean,1.9764,2.3984,-0.13119,62.30,4.5083
+Ridge regression,0.3521,0.4579,0.95877,61.80,0.7988
+RBF SVR,0.2099,0.2852,0.98401,53.00,0.3272
+Random forest,0.5290,0.6154,0.92552,34.33,0.7291
+Histogram gradient boosting,0.4324,0.5138,0.94808,26.20,0.4413
+Multilayer perceptron,0.1630,0.2297,0.98949,62.07,0.3173
+MGRE full,0.3270,0.3975,0.96893,30.67,0.3576
+No mechanics representation,0.3659,0.5158,0.94766,38.07,0.3601
+No predictor ratios,0.3828,0.4646,0.95756,24.77,0.3527
+No residual prior,0.3538,0.4724,0.95611,36.63,0.3668
+No GMM gate,0.3274,0.3979,0.96887,29.90,0.3498
+No global branch,0.5344,0.6040,0.92825,9.87,0.3537
+No local branch,0.2710,0.3480,0.97619,39.60,0.3263
+Constant interval scale,0.3270,0.3975,0.96893,19.87,0.2408

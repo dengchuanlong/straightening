@@ -1,0 +1,148 @@
+{
+  "schema": "SUPPLIED_XLSX_SOURCE_COMPARISON_V1",
+  "supplied_workbook": "fea_dataset.xlsx (source workbook; SHA256 below)",
+  "supplied_workbook_sha256": "171aee2faac094fb6b0ffd912c7c881ab458a8bea03a16ce21168a3a79595274",
+  "prior_synthetic_table": "Historical analytical-development dataset.json (SHA256 below)",
+  "prior_synthetic_sha256": "31514bf1ecdf78a49dc12e84cc9c64f9f920aa68abe266b15c8973bedc407d0d",
+  "prior_table_origin": "SYNTHETIC_DEMONSTRATION",
+  "workbook_origin_counts": {
+    "FINITE_ELEMENT_ANALYSIS": 9000
+  },
+  "row_count": 9000,
+  "numeric_columns_compared": 9,
+  "numeric_values_compared": 81000,
+  "comparison": "Same row order, all six inputs, reference target, clean reference and noise standard deviation",
+  "tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-10,
+    "reason": "Permit ordinary Excel floating-point serialization rounding"
+  },
+  "all_nine_numeric_fields_matching_rows": 9000,
+  "columns": [
+    {
+      "field": "width_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 4.6701210799761204e-14
+    },
+    {
+      "field": "thickness_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.769962616701378e-15,
+      "mean_absolute_difference": 4.2536838249260556e-15
+    },
+    {
+      "field": "span_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-13,
+      "mean_absolute_difference": 4.830901111240059e-13
+    },
+    {
+      "field": "punch_radius_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 4.833841968674177e-14
+    },
+    {
+      "field": "support_radius_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 4.8893235139581117e-14
+    },
+    {
+      "field": "prebend_stroke_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 4.928245466039193e-14
+    },
+    {
+      "field": "reference_stroke_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 2.3863479094011887e-14
+    },
+    {
+      "field": "clean_reference_stroke_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.947598300641403e-14,
+      "mean_absolute_difference": 2.3631269780505844e-14
+    },
+    {
+      "field": "noise_std_mm",
+      "compared": 9000,
+      "matching_at_declared_tolerance": 9000,
+      "max_absolute_difference": 9.853229343548264e-16,
+      "mean_absolute_difference": 8.573543110025462e-17
+    }
+  ],
+  "split_matching_rows": 9000,
+  "group_id_matches_after_removing_geometry_prefix": 8998,
+  "sample_id_matches_after_SYN_to_FEA_prefix_change": 9000,
+  "group_identifiers_converted_to_numeric_by_excel": [
+    {
+      "excel_row": 1410,
+      "stored_group_id": 4.02330790003709e+25,
+      "prior_identifier_suffix": "402330790003709923e8"
+    },
+    {
+      "excel_row": 5947,
+      "stored_group_id": 2.40989268805539e+19,
+      "prior_identifier_suffix": "24098926880553943949"
+    }
+  ],
+  "representative_examples": [
+    {
+      "excel_row": 2,
+      "workbook_sample_id": "FEA00001",
+      "prior_sample_id": "SYN00001",
+      "workbook_reference_stroke_mm": 12.3687228908939,
+      "prior_synthetic_reference_stroke_mm": 12.368722890893928,
+      "target_absolute_difference": 2.6645352591003757e-14
+    },
+    {
+      "excel_row": 3,
+      "workbook_sample_id": "FEA00002",
+      "prior_sample_id": "SYN00002",
+      "workbook_reference_stroke_mm": 12.8192066746528,
+      "prior_synthetic_reference_stroke_mm": 12.819206674652884,
+      "target_absolute_difference": 8.348877145181177e-14
+    },
+    {
+      "excel_row": 4,
+      "workbook_sample_id": "FEA00003",
+      "prior_sample_id": "SYN00003",
+      "workbook_reference_stroke_mm": 10.7101924770629,
+      "prior_synthetic_reference_stroke_mm": 10.710192477062911,
+      "target_absolute_difference": 1.0658141036401503e-14
+    },
+    {
+      "excel_row": 4501,
+      "workbook_sample_id": "FEA04500",
+      "prior_sample_id": "SYN04500",
+      "workbook_reference_stroke_mm": 6.47460320372182,
+      "prior_synthetic_reference_stroke_mm": 6.47460320372182,
+      "target_absolute_difference": 0.0
+    },
+    {
+      "excel_row": 9001,
+      "workbook_sample_id": "FEA09000",
+      "prior_sample_id": "SYN09000",
+      "workbook_reference_stroke_mm": 12.1531360269145,
+      "prior_synthetic_reference_stroke_mm": 12.153136026914527,
+      "target_absolute_difference": 2.6645352591003757e-14
+    }
+  ],
+  "original_workbook_unchanged": true,
+  "interpretation": "The supplied workbook numerically reproduces the previous disclosed synthetic dataset, with changed identifiers/origin text and Excel rounding. This file does not establish an independent finite-element dataset. No motive is inferred; the wrong file or export may have been supplied.",
+  "new_finite_element_paper_supported_by_this_file": false,
+  "native_solver_outputs_checked": false,
+  "public_lineage_check": "python scripts/verify_source_lineage.py"
+}
