@@ -1,0 +1,380 @@
+{
+  "reason": "The smooth MGRE family extension brings its fit budget to75;36 additional SVR fits bring the SVR budget to72. All alternatives are validation-only.",
+  "consumed_splits": [
+    "train",
+    "validation"
+  ],
+  "candidates": [
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.01,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.0829023327410564,
+      "validation_RMSE_mm": 0.1063931119146934,
+      "fit_seconds": 1.680965899999137
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.01,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.08309607108783335,
+      "validation_RMSE_mm": 0.10658596858698907,
+      "fit_seconds": 1.5467291999993904
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.01,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.08409473147593076,
+      "validation_RMSE_mm": 0.10766471367176518,
+      "fit_seconds": 1.2129161000011663
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.01,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.08708446724601576,
+      "validation_RMSE_mm": 0.11113957407874375,
+      "fit_seconds": 0.6813605000024836
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.04,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.06709331409646233,
+      "validation_RMSE_mm": 0.08825338835005335,
+      "fit_seconds": 3.6280181000001903
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.04,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.06707390942795276,
+      "validation_RMSE_mm": 0.0884161207036571,
+      "fit_seconds": 3.2846592999994755
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.04,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.06701963520816406,
+      "validation_RMSE_mm": 0.0879521073150683,
+      "fit_seconds": 2.260429200003273
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.04,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06907507660062392,
+      "validation_RMSE_mm": 0.08966849227285566,
+      "fit_seconds": 0.9867368000013812
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.16,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.056328221524245665,
+      "validation_RMSE_mm": 0.07516014000873493,
+      "fit_seconds": 12.474288699999306
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.16,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.056265439239617764,
+      "validation_RMSE_mm": 0.07499605370974606,
+      "fit_seconds": 10.839283400000568
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.16,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.055972662896385736,
+      "validation_RMSE_mm": 0.07559788711605248,
+      "fit_seconds": 6.133167100000719
+    },
+    {
+      "spec": {
+        "C": 16.0,
+        "gamma": 0.16,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06166656807219156,
+      "validation_RMSE_mm": 0.08097671529647825,
+      "fit_seconds": 1.3364293999984511
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.01,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.07403847071661852,
+      "validation_RMSE_mm": 0.09651779977417137,
+      "fit_seconds": 3.5220678000005137
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.01,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.07401576696535711,
+      "validation_RMSE_mm": 0.09635295830404073,
+      "fit_seconds": 3.2620377999992343
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.01,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.07429913720442989,
+      "validation_RMSE_mm": 0.09628697245021348,
+      "fit_seconds": 2.4139031000013347
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.01,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.0764729124010625,
+      "validation_RMSE_mm": 0.09854739915558536,
+      "fit_seconds": 1.247376900002564
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.04,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.06313192796176276,
+      "validation_RMSE_mm": 0.0826323427390578,
+      "fit_seconds": 11.054619200000161
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.04,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.06377429389507332,
+      "validation_RMSE_mm": 0.08326182578127604,
+      "fit_seconds": 9.807554099999834
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.04,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.06350752093857258,
+      "validation_RMSE_mm": 0.08247088022572631,
+      "fit_seconds": 6.886854599997605
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.04,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06638732964952566,
+      "validation_RMSE_mm": 0.08558516839895963,
+      "fit_seconds": 2.704910500000551
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.16,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.05889300301325648,
+      "validation_RMSE_mm": 0.07811195685126858,
+      "fit_seconds": 51.169144600000436
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.16,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.05839038107808958,
+      "validation_RMSE_mm": 0.07758461180439656,
+      "fit_seconds": 45.94916060000105
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.16,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.05784810224720039,
+      "validation_RMSE_mm": 0.07738854649386871,
+      "fit_seconds": 24.487849900000583
+    },
+    {
+      "spec": {
+        "C": 64.0,
+        "gamma": 0.16,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06284785692438184,
+      "validation_RMSE_mm": 0.08238749305864351,
+      "fit_seconds": 2.9601610000026994
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.01,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.07117337398602773,
+      "validation_RMSE_mm": 0.09350201395944699,
+      "fit_seconds": 10.7539328999992
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.01,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.07112275325699248,
+      "validation_RMSE_mm": 0.09324917094153753,
+      "fit_seconds": 9.45999749999828
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.01,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.07124466454221455,
+      "validation_RMSE_mm": 0.09318426808629454,
+      "fit_seconds": 6.942779500001052
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.01,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.07221291160474584,
+      "validation_RMSE_mm": 0.09348252392820135,
+      "fit_seconds": 3.1397864999999
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.04,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.056616239680771764,
+      "validation_RMSE_mm": 0.07435281699443831,
+      "fit_seconds": 42.53038519999973
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.04,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.05743324697021445,
+      "validation_RMSE_mm": 0.07503419216889426,
+      "fit_seconds": 36.92113520000203
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.04,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.05796328711819367,
+      "validation_RMSE_mm": 0.07559455539995916,
+      "fit_seconds": 21.701641600000585
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.04,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06272614584821558,
+      "validation_RMSE_mm": 0.08083754861573575,
+      "fit_seconds": 8.1384266999994
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.16,
+        "epsilon": 0.015
+      },
+      "validation_MAE_mm": 0.06173289263728999,
+      "validation_RMSE_mm": 0.08295818645815475,
+      "fit_seconds": 225.32075220000115
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.16,
+        "epsilon": 0.025
+      },
+      "validation_MAE_mm": 0.061500535455756046,
+      "validation_RMSE_mm": 0.0823917550576009,
+      "fit_seconds": 185.83531550000043
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.16,
+        "epsilon": 0.05
+      },
+      "validation_MAE_mm": 0.06041893609104344,
+      "validation_RMSE_mm": 0.08148272946713661,
+      "fit_seconds": 107.01918879999721
+    },
+    {
+      "spec": {
+        "C": 256.0,
+        "gamma": 0.16,
+        "epsilon": 0.1
+      },
+      "validation_MAE_mm": 0.06489582910634945,
+      "validation_RMSE_mm": 0.08562473759104365,
+      "fit_seconds": 6.615510799998447
+    }
+  ],
+  "selected": {
+    "spec": {
+      "C": 16.0,
+      "gamma": 0.16,
+      "epsilon": 0.05
+    },
+    "validation_MAE_mm": 0.055972662896385736,
+    "validation_RMSE_mm": 0.07559788711605248,
+    "fit_seconds": 6.133167100000719
+  },
+  "complete": true
+}

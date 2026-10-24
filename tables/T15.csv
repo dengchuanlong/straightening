@@ -1,0 +1,19 @@
+﻿Model,Input,Median derivative,10th percentile,90th percentile
+MGRE,width_mm,0.0399,0.0185,0.0643
+MGRE,thickness_mm,0.5137,0.2569,0.7907
+MGRE,span_mm,0.0778,0.0610,0.0920
+MGRE,punch_radius_mm,-0.0070,-0.0587,0.0350
+MGRE,support_radius_mm,0.0013,-0.0389,0.0529
+MGRE,prebend_stroke_mm,0.6501,0.4043,0.7976
+Tuned RBF-SVR,width_mm,0.0403,0.0177,0.0691
+Tuned RBF-SVR,thickness_mm,0.4979,0.2503,0.8037
+Tuned RBF-SVR,span_mm,0.0773,0.0612,0.0913
+Tuned RBF-SVR,punch_radius_mm,-0.0100,-0.0576,0.0302
+Tuned RBF-SVR,support_radius_mm,0.0016,-0.0417,0.0563
+Tuned RBF-SVR,prebend_stroke_mm,0.6411,0.4145,0.8069
+Legacy MGRE,width_mm,0.0317,0.0100,0.0627
+Legacy MGRE,thickness_mm,0.3029,0.0952,0.9018
+Legacy MGRE,span_mm,0.0784,0.0589,0.0932
+Legacy MGRE,punch_radius_mm,-0.0060,-0.0518,0.0321
+Legacy MGRE,support_radius_mm,0.0010,-0.0358,0.0487
+Legacy MGRE,prebend_stroke_mm,0.6194,0.4010,0.7942

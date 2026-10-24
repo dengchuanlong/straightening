@@ -1,5 +1,7 @@
 # Data provenance and reproducibility scope
 
+The author reaffirmed on 24 October 2026 that the dataset was independently produced by finite-element analysis. This is recorded as an author declaration; no new native solver files accompanied this revision. The existing numerical comparison and its audit status are retained.
+
 The supplied source file was `fea_dataset.xlsx`, worksheet `dataset`, header
 row 1 and observation rows 2–9001. Columns E–J are the six predictors, K is the
 reference stroke, and L–M are two diagnostic columns. The workbook SHA-256 is:
@@ -70,12 +72,7 @@ All distances in the predictors and reference target are in millimetres.
 
 ## Scope of the recorded verification
 
-The recorded checks reload 42 fitted bundles, independently recalculate their
-predictions, metrics and calibration quantiles, verify the component ablations,
-and reproduce the fixed-prediction bootstrap using seed 43. The fixed partitions
-were inspected previously, so the rerun is exploratory rather than an untouched
-confirmatory test. Software consistency is separate from source provenance and
-physical correctness.
+The current analysis reruns the improved MGRE, the legacy model, tuned baselines, and ablations using training seeds 40, 41 and 42. The verification receipt recalculates saved predictions, metrics, interval quantiles and paired bootstrap results. Model selection uses the training and validation partitions; the calibration partition supplies only the conformal quantile. Previously inspected evaluation partitions remain exploratory. See README.md and analysis/revision_verification.json for the current executed counts and checks.
 
 The historical three-diameter circular-beam report is a distinct four-input
 pilot. Its reported endpoints provide process context; they do not supply a

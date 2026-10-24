@@ -1,0 +1,148 @@
+{
+  "figures": [
+    {
+      "id": "F01",
+      "filename": "F01.png",
+      "path": "figures/F01.png",
+      "svg": "figures/F01.svg",
+      "section": "Methods",
+      "caption": "Analysis workflow and the separate roles of training, validation, calibration and final evaluation partitions.",
+      "sha256": "a134ab38575968a11b7e65455a2af4933ca7918aa62bb21274545313e901aca1"
+    },
+    {
+      "id": "F02",
+      "filename": "F02.png",
+      "path": "figures/F02.png",
+      "svg": "figures/F02.svg",
+      "section": "Methods",
+      "caption": "Distributions of six input variables and the response across training, IID test and thickness-shift partitions.",
+      "sha256": "4bff3db194b8a6aea7786b8b70ee67367d0a28658edb697d2c37205c6d385788"
+    },
+    {
+      "id": "F03",
+      "filename": "F03.png",
+      "path": "figures/F03.png",
+      "svg": "figures/F03.svg",
+      "section": "Methods",
+      "caption": "Univariate projections of the response against the six training inputs. Each panel uses the same 1,200 rows, selected as every fourth row of the 4,800-row training partition.",
+      "sha256": "b7aef96670d5aaab9c67e6470c27601ebab84466d4fb5b6f334f7382ab32d99d"
+    },
+    {
+      "id": "F04",
+      "filename": "F04.png",
+      "path": "figures/F04.png",
+      "svg": "figures/F04.svg",
+      "section": "Methods",
+      "caption": "Pearson correlations among inputs and response for all 4,800 training rows. Correlation is descriptive, not a feature-selection criterion.",
+      "sha256": "9a7b3139a3f6bc64fe876df553e2b9d3f343c12bc5d07cb14cdbda5d3bb83821"
+    },
+    {
+      "id": "F05",
+      "filename": "F05.png",
+      "path": "figures/F05.png",
+      "svg": "figures/F05.svg",
+      "section": "Methods",
+      "caption": "MGRE architecture: a positive mechanics reference, a smooth global residual trend with pairwise spline interactions, probabilistically gated local residual correction and training-support taper.",
+      "sha256": "09fca02e620cf775504278751e6e81e21b9e1339d82fc29c289cfa4fc131a45f"
+    },
+    {
+      "id": "F06",
+      "filename": "F06.png",
+      "path": "figures/F06.png",
+      "svg": "figures/F06.svg",
+      "section": "Results",
+      "caption": "IID performance of the nonconstant comparison methods. Bars show the mean and error bars the sample SD across three training seeds.",
+      "sha256": "560464a9f86a44d678b0681640cc8ff0663223daa3a326a8a0d2684d07c25ca8"
+    },
+    {
+      "id": "F07",
+      "filename": "F07.png",
+      "path": "figures/F07.png",
+      "svg": "figures/F07.svg",
+      "section": "Results",
+      "caption": "Observed-versus-predicted stroke for MGRE, tuned SVR and legacy MGRE. Points use fixed mean-across-seed predictions.",
+      "sha256": "c263f77e67bdfed14e62af4d7e9c8230d809a3ed5f508f14f9968824e350d54c"
+    },
+    {
+      "id": "F08",
+      "filename": "F08.png",
+      "path": "figures/F08.png",
+      "svg": "figures/F08.svg",
+      "section": "Results",
+      "caption": "Seed-specific validation and evaluation errors; deterministic tuned SVR repeats exactly across the three seed labels.",
+      "sha256": "5a991a863cb05920e760c6f015445aa90c64015bb02824cafe3503cef2a7d6a8"
+    },
+    {
+      "id": "F09",
+      "filename": "F09.png",
+      "path": "figures/F09.png",
+      "svg": "figures/F09.svg",
+      "section": "Results",
+      "caption": "Paired differences with 95% bootstrap intervals from 1,000 row resamples using seed 43 and fixed mean-across-seed predictions. Negative differences favor MGRE.",
+      "sha256": "aa437a8efc329e28ca17db7e1e3669145e0d31eb1f15877b277698b0031c0956"
+    },
+    {
+      "id": "F10",
+      "filename": "F10.png",
+      "path": "figures/F10.png",
+      "svg": "figures/F10.svg",
+      "section": "Results",
+      "caption": "Learning curves on fixed nested subsets. Lines and bands show means and sample SDs over three seeds; all model settings remain frozen.",
+      "sha256": "81a06a6aed9a8fa71a8eac965f1ee2e14f83f9eb53831690c5ecc6c796a08088"
+    },
+    {
+      "id": "F11",
+      "filename": "F11.png",
+      "path": "figures/F11.png",
+      "svg": "figures/F11.svg",
+      "section": "Results",
+      "caption": "Removal experiments for the selected MGRE modules. Every variant retains the full-model hyperparameters; no ablation is retuned.",
+      "sha256": "ad112719d42ea271f75fa44b60316b77037a5188869bf071cb8207f49775ddae"
+    },
+    {
+      "id": "F12",
+      "filename": "F12.png",
+      "path": "figures/F12.png",
+      "svg": "figures/F12.svg",
+      "section": "Results",
+      "caption": "Seed40 support and gate diagnostics: attenuation beyond training bounds, local residual corrections and maximum Gaussian responsibilities.",
+      "sha256": "e49c369be1153b9d074f048073070197c615b3c4aec4552eb2bc5b10950c169b"
+    },
+    {
+      "id": "F13",
+      "filename": "F13.png",
+      "path": "figures/F13.png",
+      "svg": "figures/F13.svg",
+      "section": "Results",
+      "caption": "Median local prediction derivatives with 10th\u201390th percentile ranges at 300 fixed validation inputs. These responses are descriptive sensitivities, not causal effects.",
+      "sha256": "a7dab47681745c39ed567ae203816aa64902ffa93a962836a8dfc0ecc54dcdff"
+    },
+    {
+      "id": "F14",
+      "filename": "F14.png",
+      "path": "figures/F14.png",
+      "svg": "figures/F14.svg",
+      "section": "Results",
+      "caption": "Predictive error and interval behavior in IID and shifted evaluation. The dashed line marks nominal 90% coverage; lower interval score jointly rewards sharpness and penalizes misses.",
+      "sha256": "03804c2eef7d9294a3fb9317aa0c77226f868fd8d792f881f12a972adf24f67a"
+    },
+    {
+      "id": "F15",
+      "filename": "F15.png",
+      "path": "figures/F15.png",
+      "svg": "figures/F15.svg",
+      "section": "Results",
+      "caption": "Seed40 prediction intervals for 100 evenly spaced order statistics from each final partition. Ordering is for visualization only.",
+      "sha256": "f0fbd05a7ead8f68286478885a39b99799e9585deba6e55a755f37262fcc8b35"
+    },
+    {
+      "id": "F16",
+      "filename": "F16.png",
+      "path": "figures/F16.png",
+      "svg": "figures/F16.svg",
+      "section": "Results",
+      "caption": "Thickness-stratified interval coverage and width, averaged across training seeds. Quartiles are descriptive and do not influence model selection.",
+      "sha256": "f3a7c1ad80d38f483ec2428debfb8962a7e0e05d25512b273db467877fe50fce"
+    }
+  ]
+}

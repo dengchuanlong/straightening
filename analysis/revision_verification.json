@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "model_seed_bundles": 45,
+  "final_predictions_verified": 90000,
+  "max_absolute_metric_recomputation_difference": 0.0,
+  "figures": 16,
+  "tables": 17,
+  "max_absolute_saved_model_prediction_difference": 0.0,
+  "max_absolute_interval_replay_difference": 0.0,
+  "calibration_quantiles_recomputed": 45,
+  "max_absolute_conformal_quantile_difference": 0.0,
+  "paired_bootstrap_comparators_verified": 6,
+  "max_absolute_bootstrap_recomputation_difference": 0.0,
+  "learning_fits": 36,
+  "seeds": [
+    40,
+    41,
+    42
+  ],
+  "bootstrap_seed": 43,
+  "frozen_specs_unchanged": true,
+  "data_sha256": "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b",
+  "protocol_sha256": "5060dcfbbc313698d4d28d5739534b0fd007a3689470e39cc2a96b26e7985628",
+  "diagnostic_columns_used": false,
+  "physical_provenance_validation": "Outside the scope of this numerical audit."
+}

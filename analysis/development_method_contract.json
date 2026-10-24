@@ -1,0 +1,92 @@
+{
+  "selection_status": "Provisional spline winner; finalfreeze after all SVR candidates finish.",
+  "feature_units": "All six raw physical inputs are millimetres, standardized from training statistics.",
+  "normalization": "dy=sy*L^2/(6*E*h); m=u*(L/260)^2+dy; r=log(y/m).",
+  "global_basis": "Six marginal cubic B-spline bases with4uniform knots,5non-bias columns each. Concatenate30additive columns and all15pairwise tensorproducts of25columns, yielding405columns. Ridgealpha=.01.",
+  "gates": "Standardized log(u/dy),log(L/h),log(Rp/h),log(Rs/h); four-component fullcovariance GaussianMixture; n_init2, reg_covar1e-4, max_iter200, random_state trainingseed.",
+  "local_residuals": "Each83-column totaldegree3 polynomial of standardizedraw6inputs fits r-globaltrainingprediction, weighted bymax(gateprob,.02), Ridgealpha1.",
+  "support": "d=sqrt(sum((max(xmin-x,0)+max(x-xmax,0))^2/(xmax-xmin)^2)); taper=exp(-4*d); xmin,xmax fromtrainonly.",
+  "prediction": "yhat=m*exp(global+beta*taper*sum_k gateprob_k*local_k); beta1 selectedvalidation.",
+  "parameter_counts": {
+    "global_with_intercept": 406,
+    "four_local_with_intercepts": 336,
+    "GMM_means_covariances_freeweights": 59,
+    "total": 801
+  },
+  "module_checks": [
+    {
+      "variant": "MGRE",
+      "validation_MAE_mm": 0.05178336919445356,
+      "validation_RMSE_mm": 0.06831509985099098,
+      "max_change_from_full_mm": 0.0,
+      "global_basis_columns": 405,
+      "local_experts": 4,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoMechanics",
+      "validation_MAE_mm": 0.05208527322836081,
+      "validation_RMSE_mm": 0.06863181413868577,
+      "max_change_from_full_mm": 0.04247525291686571,
+      "global_basis_columns": 405,
+      "local_experts": 4,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoResidualPrior",
+      "validation_MAE_mm": 0.052145508495889864,
+      "validation_RMSE_mm": 0.06862972293067973,
+      "max_change_from_full_mm": 0.04537092482264171,
+      "global_basis_columns": 405,
+      "local_experts": 4,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoSplineInteractions",
+      "validation_MAE_mm": 0.06714695987668966,
+      "validation_RMSE_mm": 0.08656826674760669,
+      "max_change_from_full_mm": 0.23101700409354464,
+      "global_basis_columns": 30,
+      "local_experts": 4,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoGate",
+      "validation_MAE_mm": 0.05338676032702471,
+      "validation_RMSE_mm": 0.06997165061426283,
+      "max_change_from_full_mm": 0.08925999959999764,
+      "global_basis_columns": 405,
+      "local_experts": 1,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoLocal",
+      "validation_MAE_mm": 0.053881167507762034,
+      "validation_RMSE_mm": 0.07091464559334829,
+      "max_change_from_full_mm": 0.12904163196111895,
+      "global_basis_columns": 405,
+      "local_experts": 0,
+      "local_basis_columns": 83
+    },
+    {
+      "variant": "NoSupportTaper",
+      "validation_MAE_mm": 0.051783353369954876,
+      "validation_RMSE_mm": 0.06831507927670397,
+      "max_change_from_full_mm": 1.366894191079382e-05,
+      "global_basis_columns": 405,
+      "local_experts": 4,
+      "local_basis_columns": 83
+    }
+  ],
+  "validation_only": true,
+  "no_calibration_test_or_ood_labels_used": true,
+  "module_note": "NoSupportTaper can be effectivelyidentical inside training support. NoRatioPredictor omitted because selectedcoordinates alreadyraw; no-op wouldnotestablish contribution.",
+  "ablation_definitions": {
+    "NoMechanics": "Replacepositivebeampriorwithtrainingtargetmedian; replacegategeometryratios withraw h,L,Rp,Rs. Globalrawcoordinatesunchanged.",
+    "NoResidualPrior": "Replace m by1; gatesunchanged.",
+    "NoSplineInteractions": "Removeonlyglobaltensor-product pairinteractions; retainmarginal splines andlocalcubicexperts.",
+    "NoGate": "Replacefourweightedexpertswithoneunweightedglobalresidualpolynomial; noGMM.",
+    "NoLocal": "Discardallgatedresidualcorrection.",
+    "NoSupportTaper": "Setlocalcorrectiontaperidentically1."
+  }
+}

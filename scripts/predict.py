@@ -1,28 +1,28 @@
-"""Predict with saved portable bundles; requires the benchmark sklearn version.
-
-python scripts/predict.py --model models/MGRE_seed40.joblib --data data/dataset.json --output analysis/prediction_replay.json
-Input schema and origin are checked; output makes no physical qualification claim.
-"""
-import argparse
+"""Predict strokes and calibrated intervals from a recreated fitted model."""
 from pathlib import Path
-import joblib
+import argparse,csv
 import numpy as np
-from run_experiments import validated_data, dump, FEATURES
+import joblib
+import legacy_benchmark  # Registers the legacy run_experiments pickle alias.
+import enhanced_mgre
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--model",type=Path,required=True)
-    ap.add_argument("--data",type=Path,required=True)
-    ap.add_argument("--output",type=Path,required=True)
+    ap.add_argument('--model',type=Path,required=True)
+    ap.add_argument('--input',type=Path,required=True)
+    ap.add_argument('--output',type=Path,required=True)
     args=ap.parse_args()
     bundle=joblib.load(args.model)
-    _,parts,_,_,origin=validated_data(args.data)
-    rows=[]
-    for split,part in parts.items():
-        p=bundle["point_model"].predict(part["x"])
-        sm=bundle["scale_model"]
-        scale=np.maximum(sm.predict(part["x"]),bundle["scale_floor_mm"]) if sm else np.ones(len(p))
-        for i,sid in enumerate(part["ids"]):
-            rows.append({"sample_id":sid,"split":split,"prediction_mm":float(p[i]),"lower_mm":float(max(0,p[i]-bundle["conformal_q"]*scale[i])),"upper_mm":float(p[i]+bundle["conformal_q"]*scale[i]),"data_origin":origin})
-    dump(args.output,{"model_training_data_origin":bundle["data_origin"],"prediction_input_data_origin":origin,"physical_correctness_verified":False,"rows":rows})
-if __name__=="__main__":main()
+    with args.input.open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
+    x=np.asarray([[float(row[k]) for k in bundle['features']] for row in rows])
+    assert x.ndim==2 and x.shape[1]==6 and np.isfinite(x).all() and (x>0).all()
+    pred=bundle['model'].predict(x)
+    scale=np.maximum(bundle['scale_model'].predict(x),bundle['scale_floor_mm'])
+    radius=bundle['conformal_q']*scale
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    with args.output.open('w',encoding='utf-8',newline='') as f:
+        w=csv.writer(f);w.writerow(['sample_id','predicted_stroke_mm','lower_90_mm','upper_90_mm'])
+        for i,row in enumerate(rows):w.writerow([row.get('sample_id',str(i+1)),pred[i],max(0,pred[i]-radius[i]),pred[i]+radius[i]])
+    print(f'Wrote {len(rows)} predictions to {args.output}')
+
+if __name__=='__main__':main()

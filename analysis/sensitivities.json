@@ -1,0 +1,128 @@
+[
+  {
+    "model": "MGRE",
+    "feature": "width_mm",
+    "median_derivative_mm_per_mm": 0.03986216945843199,
+    "p10": 0.018522787258868773,
+    "p90": 0.06425988109479296
+  },
+  {
+    "model": "MGRE",
+    "feature": "thickness_mm",
+    "median_derivative_mm_per_mm": 0.5136626276884375,
+    "p10": 0.25686196100998093,
+    "p90": 0.7907301551848829
+  },
+  {
+    "model": "MGRE",
+    "feature": "span_mm",
+    "median_derivative_mm_per_mm": 0.07775521795327575,
+    "p10": 0.06102146807409306,
+    "p90": 0.09195431677095928
+  },
+  {
+    "model": "MGRE",
+    "feature": "punch_radius_mm",
+    "median_derivative_mm_per_mm": -0.007038604371882499,
+    "p10": -0.05865131435554841,
+    "p90": 0.03502332597335331
+  },
+  {
+    "model": "MGRE",
+    "feature": "support_radius_mm",
+    "median_derivative_mm_per_mm": 0.0013221941562664387,
+    "p10": -0.038902070253421885,
+    "p90": 0.052878464182589555
+  },
+  {
+    "model": "MGRE",
+    "feature": "prebend_stroke_mm",
+    "median_derivative_mm_per_mm": 0.6500844012827653,
+    "p10": 0.40430317556283873,
+    "p90": 0.797562379956167
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "width_mm",
+    "median_derivative_mm_per_mm": 0.04034312738228607,
+    "p10": 0.017732841989627775,
+    "p90": 0.06905197513191148
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "thickness_mm",
+    "median_derivative_mm_per_mm": 0.4979483935890418,
+    "p10": 0.250321914932818,
+    "p90": 0.8037011574991721
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "span_mm",
+    "median_derivative_mm_per_mm": 0.07728981542722776,
+    "p10": 0.06124527991572186,
+    "p90": 0.09133895066052515
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "punch_radius_mm",
+    "median_derivative_mm_per_mm": -0.00997186200770088,
+    "p10": -0.05761168219751241,
+    "p90": 0.030154760547313465
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "support_radius_mm",
+    "median_derivative_mm_per_mm": 0.001591065534560043,
+    "p10": -0.04165242023622555,
+    "p90": 0.056294664452378664
+  },
+  {
+    "model": "RBF_SVR_tuned",
+    "feature": "prebend_stroke_mm",
+    "median_derivative_mm_per_mm": 0.6410643358900354,
+    "p10": 0.4145414676639517,
+    "p90": 0.8068627909785978
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "width_mm",
+    "median_derivative_mm_per_mm": 0.031739692420890565,
+    "p10": 0.00999364439678957,
+    "p90": 0.06272436546890611
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "thickness_mm",
+    "median_derivative_mm_per_mm": 0.3029170014457221,
+    "p10": 0.09518911281280461,
+    "p90": 0.9018115277540093
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "span_mm",
+    "median_derivative_mm_per_mm": 0.07844877120051702,
+    "p10": 0.058858491731732125,
+    "p90": 0.09319048996798211
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "punch_radius_mm",
+    "median_derivative_mm_per_mm": -0.005999630183182253,
+    "p10": -0.05179780466253598,
+    "p90": 0.03208348993095661
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "support_radius_mm",
+    "median_derivative_mm_per_mm": 0.0009828638061220175,
+    "p10": -0.035788746711547574,
+    "p90": 0.04866569629039574
+  },
+  {
+    "model": "LegacyMGRE",
+    "feature": "prebend_stroke_mm",
+    "median_derivative_mm_per_mm": 0.6193816362324422,
+    "p10": 0.4010202900099411,
+    "p90": 0.7942265507623553
+  }
+]

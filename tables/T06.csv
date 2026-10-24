@@ -1,0 +1,11 @@
+﻿Method,Configuration,Validation MAE (mm)
+Mean,Training-response mean,1.579602 ± 0.000000
+Ridge,"Standardized six inputs; {""alpha"": 0.01}",0.178043 ± 0.000000
+Polynomial ridge,"Direct target; {""alpha"": 0.0001, ""degree"": 4, ""representation"": ""log_raw""}",0.066975 ± 0.000000
+Random forest,"160 trees; all input features; {""min_samples_leaf"": 1}",0.127961 ± 0.001284
+Gradient boosting,"260 iterations; learning rate 0.06; min leaf 20; L2=1; {""max_leaf_nodes"": 31}",0.077160 ± 0.000000
+MLP,"64–32 tanh units; learning rate 0.003; max 350 iterations; internal early stopping; {""alpha"": 0.001}",0.069967 ± 0.001726
+Tuned RBF-SVR,"{""C"": 128.0, ""epsilon"": 0.035, ""gamma"": 0.08}",0.053311 ± 0.000000
+Legacy MGRE,Three full-covariance Gaussian components; HGB local experts; global SVR; validation blend per seed,0.054629 ± 0.000096
+MGRE,"Pairwise cubic splines: 4 knots, ridge 0.01; 4 Gaussian-gated degree-3 ridge-1.0 residual experts; beta=1.0; exp(-4d) support taper",0.051881 ± 0.000187
+Common interval estimator,"HGB absolute error, 80 iterations, 7 leaves, min_leaf45, l2=2, learning_rate=.06",—

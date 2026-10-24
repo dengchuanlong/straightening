@@ -1,0 +1,12 @@
+﻿Item,Value
+Elastic reference (MPa),204401.0
+Yield reference (MPa),1000.121
+Training seeds,"40, 41, 42"
+Bootstrap seed,43
+Bootstrap replicates,"1,000"
+Conformal nominal coverage,90%
+Calibration rank,"901 of 1,000"
+Scale floor (mm),0.015
+Features,Six geometric/loading variables
+Target,Straightening stroke (mm)
+Learning-curve sizes,"100, 250, 500, 1000, 2000, 4800"

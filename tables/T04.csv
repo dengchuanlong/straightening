@@ -1,0 +1,14 @@
+﻿Setting,Value
+representation,raw
+degree,3
+ridge,0.01
+n_experts,4
+local_degree,3
+local_ridge,1.0
+correction_weight,1.0
+taper,True
+basis,tensor_spline
+knots,4
+Ablation policy,Selected full-model parameters retained; remove only the named component without ablation-specific retuning.
+Primary selection,Validation MAE
+Tie-break,Validation RMSE

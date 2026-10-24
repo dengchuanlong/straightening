@@ -1,5 +1,0 @@
-﻿Subset,Metric,MGRE minus baseline mm,Conditional 95% interval mm
-test,MAE,-0.000422,"[-0.002039, 0.001120]"
-test,RMSE,+0.000264,"[-0.001759, 0.002179]"
-ood,MAE,+0.117080,"[0.105354, 0.129391]"
-ood,RMSE,+0.112295,"[0.098961, 0.127515]"

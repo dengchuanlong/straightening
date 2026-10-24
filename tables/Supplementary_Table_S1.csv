@@ -1,9 +1,0 @@
-﻿Source field or evidence,Recorded role,Use in this analysis
-Columns E–J,Six positive numeric inputs in mm,Only fitted predictor inputs
-Column K,reference_stroke_mm,Unchanged supervised label; FE feasibility/optimality unverified
-Columns L–M,clean reference and noise scale,"Legacy analytical diagnostics; excluded from fitting, selection and calibration"
-Columns A–D,"IDs, split and supplied origin text",Retained source metadata; origin text is not solver evidence
-Source group cells B1410/B5947,Excel-converted numeric identifiers,Original values retained; numerical-row group hashes computed
-"9,000 × 9 numeric comparison",All rows match prior analytical table,Maximum difference 9.95e-13; documented lineage conflict retained
-Native FE inputs/results,Not yet linked to this workbook,"No confirmed solver settings, labels, convergence or unloaded error"
-Prior material/bending sources,Historical separate study evidence,"Not attributed to these 9,000 rows without case-level links"

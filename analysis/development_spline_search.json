@@ -1,0 +1,1495 @@
+{
+  "phase_reason": "Polynomial mechanics residual trends failed validation versus previously established SVR; add prespecified tensor-spline family before any final test evaluation.",
+  "used_splits": [
+    "train",
+    "validation"
+  ],
+  "spline_candidates": [
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05473861658786179,
+      "validation_RMSE_mm": 0.07182949609794363,
+      "fit_seconds": 0.0541549000008672
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.053881167507762034,
+      "validation_RMSE_mm": 0.07091464559334829,
+      "fit_seconds": 0.054396399998950073
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.057962589613811656,
+      "validation_RMSE_mm": 0.07624721668558751,
+      "fit_seconds": 0.05171940000218456
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.056616256639127276,
+      "validation_RMSE_mm": 0.07380154735445076,
+      "fit_seconds": 0.1266055000014603
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.054802717963580085,
+      "validation_RMSE_mm": 0.07230523597800691,
+      "fit_seconds": 0.12008300000161398
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.05636061371139199,
+      "validation_RMSE_mm": 0.07440924479319058,
+      "fit_seconds": 0.12389859999893815
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.061902618224565796,
+      "validation_RMSE_mm": 0.08111854831591152,
+      "fit_seconds": 0.27416770000127144
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.058166351405736214,
+      "validation_RMSE_mm": 0.07622008234258344,
+      "fit_seconds": 0.2759485000024142
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.057437234236631884,
+      "validation_RMSE_mm": 0.07517001027110229,
+      "fit_seconds": 0.25914800000100513
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06253821429997843,
+      "validation_RMSE_mm": 0.08205857013104055,
+      "fit_seconds": 0.05110680000143475
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06262446941424331,
+      "validation_RMSE_mm": 0.08215837894941913,
+      "fit_seconds": 0.05176329999812879
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06822419980079635,
+      "validation_RMSE_mm": 0.08911934814321361,
+      "fit_seconds": 0.052090399996814085
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.06426428824413621,
+      "validation_RMSE_mm": 0.08374905061249627,
+      "fit_seconds": 0.11505069999839179
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.06243376217962191,
+      "validation_RMSE_mm": 0.08170213895560642,
+      "fit_seconds": 0.11507429999983287
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.06398567174277278,
+      "validation_RMSE_mm": 0.08375752947493033,
+      "fit_seconds": 0.11423350000040955
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.06810621322136066,
+      "validation_RMSE_mm": 0.08917232063892623,
+      "fit_seconds": 0.26507389999824227
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.06560570499542945,
+      "validation_RMSE_mm": 0.08573045966909737,
+      "fit_seconds": 0.2550334000006842
+    },
+    {
+      "spec": {
+        "representation": "ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.06472684378576764,
+      "validation_RMSE_mm": 0.08443377813977941,
+      "fit_seconds": 0.26645690000077593
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06257606280846786,
+      "validation_RMSE_mm": 0.08186136771338169,
+      "fit_seconds": 0.05393479999838746
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06375626584796636,
+      "validation_RMSE_mm": 0.08278501141810828,
+      "fit_seconds": 0.053125700000236975
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.06915605045515989,
+      "validation_RMSE_mm": 0.08935255215224863,
+      "fit_seconds": 0.05306670000209124
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.06355056309699153,
+      "validation_RMSE_mm": 0.08304730721395888,
+      "fit_seconds": 0.13098940000054426
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.062341517068380176,
+      "validation_RMSE_mm": 0.08161015933447384,
+      "fit_seconds": 0.11863889999949606
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 6
+      },
+      "validation_MAE_mm": 0.06425088545370718,
+      "validation_RMSE_mm": 0.08432807335544873,
+      "fit_seconds": 0.11336640000081388
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.0001,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.06732523645478085,
+      "validation_RMSE_mm": 0.08823598895509238,
+      "fit_seconds": 0.25251090000165277
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.0653068407847795,
+      "validation_RMSE_mm": 0.0850777524484327,
+      "fit_seconds": 0.2546323999995366
+    },
+    {
+      "spec": {
+        "representation": "log_ratios",
+        "degree": 3,
+        "ridge": 1.0,
+        "n_experts": 0,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 8
+      },
+      "validation_MAE_mm": 0.06433740079873457,
+      "validation_RMSE_mm": 0.08402469819070792,
+      "fit_seconds": 0.2558772999982466
+    }
+  ],
+  "gated_candidates": [
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05353304066507907,
+      "validation_RMSE_mm": 0.07058010357471582,
+      "fit_seconds": 0.08369350000066333
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05324157912567866,
+      "validation_RMSE_mm": 0.07030751709364545,
+      "fit_seconds": 0.08369350000066333
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05304641688444277,
+      "validation_RMSE_mm": 0.07009761387320976,
+      "fit_seconds": 0.08369350000066333
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05291576426979007,
+      "validation_RMSE_mm": 0.06995096323530592,
+      "fit_seconds": 0.08369350000066333
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05353335485435033,
+      "validation_RMSE_mm": 0.07058039051467892,
+      "fit_seconds": 0.07998109999971348
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05324206649215802,
+      "validation_RMSE_mm": 0.0703079753900462,
+      "fit_seconds": 0.07998109999971348
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05304681041108479,
+      "validation_RMSE_mm": 0.07009812609072646,
+      "fit_seconds": 0.07998109999971348
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05291607750185664,
+      "validation_RMSE_mm": 0.06995141068819269,
+      "fit_seconds": 0.07998109999971348
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05323549559446198,
+      "validation_RMSE_mm": 0.0701192058790325,
+      "fit_seconds": 0.08726649999880465
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05287367760212477,
+      "validation_RMSE_mm": 0.06956188966232174,
+      "fit_seconds": 0.08726649999880465
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05271760551963574,
+      "validation_RMSE_mm": 0.06924865032182033,
+      "fit_seconds": 0.08726649999880465
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052779292501666554,
+      "validation_RMSE_mm": 0.06918300894510143,
+      "fit_seconds": 0.08726649999880465
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.0532356541717626,
+      "validation_RMSE_mm": 0.07011955966337101,
+      "fit_seconds": 0.08828419999917969
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052873780268384865,
+      "validation_RMSE_mm": 0.06956232486270672,
+      "fit_seconds": 0.08828419999917969
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052717305302289574,
+      "validation_RMSE_mm": 0.06924888687626478,
+      "fit_seconds": 0.08828419999917969
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 2,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052778441729565945,
+      "validation_RMSE_mm": 0.06918276483910313,
+      "fit_seconds": 0.08828419999917969
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05356120198893341,
+      "validation_RMSE_mm": 0.0706304406544624,
+      "fit_seconds": 0.10830150000037975
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05328182631411611,
+      "validation_RMSE_mm": 0.0704006901358151,
+      "fit_seconds": 0.10830150000037975
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05306574933892419,
+      "validation_RMSE_mm": 0.07022592917175464,
+      "fit_seconds": 0.10830150000037975
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05293738261526658,
+      "validation_RMSE_mm": 0.07010656974349637,
+      "fit_seconds": 0.10830150000037975
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05356151786500829,
+      "validation_RMSE_mm": 0.07063065061112188,
+      "fit_seconds": 0.10857579999719746
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05328231686597947,
+      "validation_RMSE_mm": 0.07040098794618554,
+      "fit_seconds": 0.10857579999719746
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05306624817499439,
+      "validation_RMSE_mm": 0.0702261913013198,
+      "fit_seconds": 0.10857579999719746
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.0529374672761263,
+      "validation_RMSE_mm": 0.07010667178951206,
+      "fit_seconds": 0.10857579999719746
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05306889523252173,
+      "validation_RMSE_mm": 0.06993516294510661,
+      "fit_seconds": 0.12239950000002864
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05258010980476011,
+      "validation_RMSE_mm": 0.06923478011807342,
+      "fit_seconds": 0.12239950000002864
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05225593331220895,
+      "validation_RMSE_mm": 0.06882238999966268,
+      "fit_seconds": 0.12239950000002864
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052168652449162266,
+      "validation_RMSE_mm": 0.06870355398947947,
+      "fit_seconds": 0.12239950000002864
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05306968317037474,
+      "validation_RMSE_mm": 0.06993631207772733,
+      "fit_seconds": 0.1227102000011655
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.0525814112366819,
+      "validation_RMSE_mm": 0.06923652555466012,
+      "fit_seconds": 0.1227102000011655
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052257160677877404,
+      "validation_RMSE_mm": 0.06882415368166188,
+      "fit_seconds": 0.1227102000011655
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 3,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052169309679197626,
+      "validation_RMSE_mm": 0.06870474622849965,
+      "fit_seconds": 0.1227102000011655
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.0533154753714689,
+      "validation_RMSE_mm": 0.07030681944223478,
+      "fit_seconds": 0.11592999999993481
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052839719165220025,
+      "validation_RMSE_mm": 0.06978369138073995,
+      "fit_seconds": 0.11592999999993481
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052469284721686354,
+      "validation_RMSE_mm": 0.06934722329498162,
+      "fit_seconds": 0.11592999999993481
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052167249539500214,
+      "validation_RMSE_mm": 0.06899910526542216,
+      "fit_seconds": 0.11592999999993481
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05331615536286082,
+      "validation_RMSE_mm": 0.07030745097173546,
+      "fit_seconds": 0.11638160000075004
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05284072378245775,
+      "validation_RMSE_mm": 0.06978474800893959,
+      "fit_seconds": 0.11638160000075004
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05247051296720798,
+      "validation_RMSE_mm": 0.06934849219441977,
+      "fit_seconds": 0.11638160000075004
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 2,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05216878428392679,
+      "validation_RMSE_mm": 0.06900036860426471,
+      "fit_seconds": 0.11638160000075004
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.052901386684996145,
+      "validation_RMSE_mm": 0.0697246094253276,
+      "fit_seconds": 0.13125070000023698
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05230207226670855,
+      "validation_RMSE_mm": 0.06888690682958025,
+      "fit_seconds": 0.13125070000023698
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.051900750969686896,
+      "validation_RMSE_mm": 0.06841497993606506,
+      "fit_seconds": 0.13125070000023698
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 0.1,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05178501006872409,
+      "validation_RMSE_mm": 0.06831691272561514,
+      "fit_seconds": 0.13125070000023698
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.25,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05290200008545575,
+      "validation_RMSE_mm": 0.06972553979035741,
+      "fit_seconds": 0.13077110000085668
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.5,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.0523027354543392,
+      "validation_RMSE_mm": 0.06888786372100199,
+      "fit_seconds": 0.13077110000085668
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 0.75,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.051900551625203795,
+      "validation_RMSE_mm": 0.06841502444498143,
+      "fit_seconds": 0.13077110000085668
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05178336919445356,
+      "validation_RMSE_mm": 0.06831509985099098,
+      "fit_seconds": 0.13077110000085668
+    }
+  ],
+  "polynomial_baselines": [
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 2,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.10131334911878027,
+      "validation_RMSE_mm": 0.1273750487948078,
+      "fit_seconds": 0.004318600000260631
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 2,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.10131335419082617,
+      "validation_RMSE_mm": 0.12737520163594793,
+      "fit_seconds": 0.0036067999972146936
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 2,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.10131387922024912,
+      "validation_RMSE_mm": 0.12739110137710932,
+      "fit_seconds": 0.0037182000014581718
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.07262797587708111,
+      "validation_RMSE_mm": 0.09445850501954803,
+      "fit_seconds": 0.007211000000097556
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.07262867651693675,
+      "validation_RMSE_mm": 0.0944584099759175,
+      "fit_seconds": 0.00973379999777535
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.07270465685550645,
+      "validation_RMSE_mm": 0.09445791923347238,
+      "fit_seconds": 0.00853800000186311
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 4,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.06909574676781445,
+      "validation_RMSE_mm": 0.08867218226783356,
+      "fit_seconds": 0.021870700002182275
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 4,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.06909634987174153,
+      "validation_RMSE_mm": 0.08867189587381356,
+      "fit_seconds": 0.016641700000036508
+    },
+    {
+      "spec": {
+        "representation": "raw",
+        "degree": 4,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.0691716358786417,
+      "validation_RMSE_mm": 0.08865484288886166,
+      "fit_seconds": 0.01860329999908572
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 2,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.1012590963463992,
+      "validation_RMSE_mm": 0.1274628248480212,
+      "fit_seconds": 0.0037274000023899134
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 2,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.1012590690411441,
+      "validation_RMSE_mm": 0.12746292352232078,
+      "fit_seconds": 0.0035218000011809636
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 2,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.10125747331777359,
+      "validation_RMSE_mm": 0.12747346914427346,
+      "fit_seconds": 0.003430199998547323
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 3,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.07584550833370861,
+      "validation_RMSE_mm": 0.09827770081772896,
+      "fit_seconds": 0.007514100001571933
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 3,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.07584576678885199,
+      "validation_RMSE_mm": 0.09827772455022363,
+      "fit_seconds": 0.007475500002328772
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 3,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.07587779355483085,
+      "validation_RMSE_mm": 0.09828835992425651,
+      "fit_seconds": 0.007197300001280382
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 4,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.06697520338121284,
+      "validation_RMSE_mm": 0.08679392177734221,
+      "fit_seconds": 0.01649370000086492
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 4,
+        "alpha": 0.01
+      },
+      "validation_MAE_mm": 0.06697571813004179,
+      "validation_RMSE_mm": 0.08679349889167194,
+      "fit_seconds": 0.017861399999674177
+    },
+    {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 4,
+        "alpha": 1.0
+      },
+      "validation_MAE_mm": 0.06704416133223869,
+      "validation_RMSE_mm": 0.08676417688609361,
+      "fit_seconds": 0.016985800000838935
+    }
+  ],
+  "selected_spline": {
+    "spec": {
+      "representation": "raw",
+      "degree": 3,
+      "ridge": 0.01,
+      "n_experts": 4,
+      "local_degree": 3,
+      "local_ridge": 1.0,
+      "correction_weight": 1.0,
+      "taper": true,
+      "basis": "tensor_spline",
+      "knots": 4
+    },
+    "validation_MAE_mm": 0.05178336919445356,
+    "validation_RMSE_mm": 0.06831509985099098,
+    "fit_seconds": 0.13077110000085668
+  },
+  "selected_polynomial_baseline": {
+    "spec": {
+      "representation": "log_raw",
+      "degree": 4,
+      "alpha": 0.0001
+    },
+    "validation_MAE_mm": 0.06697520338121284,
+    "validation_RMSE_mm": 0.08679392177734221,
+    "fit_seconds": 0.01649370000086492
+  }
+}

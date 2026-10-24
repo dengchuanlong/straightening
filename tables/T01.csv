@@ -1,0 +1,8 @@
+﻿Variable,Role,Unit,Minimum,Maximum,Mean ± SD
+width_mm,Input,mm,30.0012,39.9996,34.9849 ± 2.8927
+thickness_mm,Input,mm,7.0002,9.9989,8.1818 ± 0.7497
+span_mm,Input,mm,180.0026,259.9999,220.0392 ± 23.1494
+punch_radius_mm,Input,mm,10.0012,24.9997,17.4953 ± 4.3433
+support_radius_mm,Input,mm,10.0014,24.9996,17.5150 ± 4.3139
+prebend_stroke_mm,Input,mm,12.0008,15.9997,14.0169 ± 1.1612
+reference_stroke_mm,Response,mm,5.6718,15.8834,9.7232 ± 1.9706

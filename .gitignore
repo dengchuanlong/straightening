@@ -1,13 +1,11 @@
-.venv/
 __pycache__/
 *.pyc
+.venv/
 models/
 qa/
 *.docx
 *.pdf
 ~$*
 analysis/results.json
-analysis/evaluation_predictions.csv
-analysis/prediction_replay.json
+analysis/predictions*.csv
 figures/*.png
-figures/*.svg

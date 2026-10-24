@@ -1,0 +1,131 @@
+{
+  "model_class": "enhanced_mgre.SmoothMGRE",
+  "material": [
+    204401.0,
+    1000.121
+  ],
+  "seeds": [
+    40,
+    41,
+    42
+  ],
+  "data_sha256": "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b",
+  "bootstrap_seed": 43,
+  "mgre_spec": {
+    "representation": "raw",
+    "degree": 3,
+    "ridge": 0.01,
+    "n_experts": 4,
+    "local_degree": 3,
+    "local_ridge": 1.0,
+    "correction_weight": 1.0,
+    "taper": true,
+    "basis": "tensor_spline",
+    "knots": 4
+  },
+  "tuned_svr_spec": {
+    "C": 128.0,
+    "gamma": 0.08,
+    "epsilon": 0.035
+  },
+  "polynomial_baseline_spec": {
+    "representation": "log_raw",
+    "degree": 4,
+    "alpha": 0.0001
+  },
+  "ablation_variants": [
+    "NoMechanics",
+    "NoResidualPrior",
+    "NoSplineInteractions",
+    "NoGate",
+    "NoLocal",
+    "NoSupportTaper"
+  ],
+  "ablation_policy": "Selected full-model parameters retained; remove only the named component without ablation-specific retuning.",
+  "validation_selection": {
+    "MGRE": {
+      "spec": {
+        "representation": "raw",
+        "degree": 3,
+        "ridge": 0.01,
+        "n_experts": 4,
+        "local_degree": 3,
+        "local_ridge": 1.0,
+        "correction_weight": 1.0,
+        "taper": true,
+        "basis": "tensor_spline",
+        "knots": 4
+      },
+      "validation_MAE_mm": 0.05178336919445356,
+      "validation_RMSE_mm": 0.06831509985099098,
+      "fit_seconds": 0.13077110000085668
+    },
+    "RBF_SVR_tuned": {
+      "spec": {
+        "C": 128.0,
+        "gamma": 0.08,
+        "epsilon": 0.035
+      },
+      "validation_MAE_mm": 0.05331071699478351,
+      "validation_RMSE_mm": 0.07023505377882926,
+      "fit_seconds": 34.12630920000083
+    },
+    "PolynomialRidge": {
+      "spec": {
+        "representation": "log_raw",
+        "degree": 4,
+        "alpha": 0.0001
+      },
+      "validation_MAE_mm": 0.06697520338121284,
+      "validation_RMSE_mm": 0.08679392177734221,
+      "fit_seconds": 0.01649370000086492
+    }
+  },
+  "validation_seed_results": [
+    {
+      "seed": 40,
+      "validation_MAE_mm": 0.05178336919445356,
+      "validation_RMSE_mm": 0.06831509985099098
+    },
+    {
+      "seed": 41,
+      "validation_MAE_mm": 0.05209612894462127,
+      "validation_RMSE_mm": 0.06857744404668177
+    },
+    {
+      "seed": 42,
+      "validation_MAE_mm": 0.0517632223645094,
+      "validation_RMSE_mm": 0.06823352391817002
+    }
+  ],
+  "model_descriptors": {
+    "global_basis_columns": 405,
+    "global_ridge_coefficients_including_intercept": 406,
+    "local_basis_columns": 83,
+    "local_ridge_coefficients_including_intercepts": 336,
+    "gate_components": 4,
+    "gate_dimensions": 4,
+    "gate_covariance_type": "full",
+    "gate_fitted_scalar_parameters": 59,
+    "note": "Basis dimensions apply to selected six-coordinate4knotcubic tensor spline and cubic residual experts; scalers/envelope summaries are additional preprocessing statistics."
+  },
+  "fit_budget": {
+    "MGRE_fits": 75,
+    "MGRE_validation_comparisons": 138,
+    "SVR_fits": 72,
+    "SVR_validation_comparisons": 72,
+    "polynomial_baseline_fits": 18,
+    "post_selection_seed_repeats": 3,
+    "adaptive_extension_reason": "Polynomial mechanics residual trends failed validation versus previously established SVR; add prespecified tensor-spline family before any final test evaluation.",
+    "note": "The27polynomial+9gated initial fits preceded27spline+12gated refinement fits. Each gated fit has4validation correction-weight choices."
+  },
+  "consumed_development_splits": [
+    "train",
+    "validation"
+  ],
+  "test_or_calibration_used_for_selection": false,
+  "interpretation": "Exploratory revision of previously examined partitions, not an untouched confirmatory test.",
+  "final_freeze_ready": true,
+  "frozen_utc": "2026-10-24T13:48:22.981535+00:00",
+  "source_code_sha256": "83b902d583f7e097828c804e48fab994484e9991d19c5bbcaa97e06c3c11f77d"
+}

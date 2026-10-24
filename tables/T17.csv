@@ -1,0 +1,15 @@
+﻿Item,Recorded value
+Dataset SHA-256,cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b
+Development specification SHA-256,20583c281eb1cbf012df7872862d76bb02cac20e10152dc64bcb6820e85aeccb
+Evaluation protocol SHA-256,5060dcfbbc313698d4d28d5739534b0fd007a3689470e39cc2a96b26e7985628
+Model-seed bundles,45
+Learning-curve fits,36
+Evaluation rows per split,"1,000"
+Run elapsed seconds,313.69
+Numerical threads,1
+Logical CPUs,12
+python,3.12.14
+numpy,2.3.5
+scipy,1.16.3
+scikit_learn,1.7.2
+joblib,1.6.0

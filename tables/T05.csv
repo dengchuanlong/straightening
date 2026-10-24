@@ -1,0 +1,15 @@
+﻿Candidate family,Validation scores,Best MAE (mm),Corresponding RMSE (mm)
+global candidates,27,0.067379,0.086871
+gated candidates,36,0.064466,0.083649
+svr candidates,36,0.053311,0.070235
+spline candidates,27,0.053881,0.070915
+spline gated candidates,48,0.051783,0.068315
+additional svr candidates,36,0.055973,0.075598
+polynomial candidates,18,0.066975,0.086794
+post selection validation seeds,3,0.051763,0.068234
+Mean,1,1.579602,1.889072
+Ridge,3,0.178043,0.228171
+PolynomialRidge,18,0.066975,0.086794
+RandomForest,2,0.127659,0.162172
+HGB,2,0.077160,0.097653
+MLP,2,0.070804,0.091512

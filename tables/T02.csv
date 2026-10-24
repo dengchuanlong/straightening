@@ -1,0 +1,6 @@
+﻿Partition,n,Thickness (mm),Stroke (mm),Role
+train,4800,7.001–9.000,5.672–14.826,Coefficient fitting
+validation,1200,7.000–9.000,5.945–15.119,Selection and interval-scale fitting
+calibration,1000,7.000–9.000,5.749–14.840,Conformal quantile
+test,1000,7.004–9.000,5.925–14.915,IID evaluation
+ood,1000,9.250–9.999,6.402–15.883,Thickness-shift evaluation

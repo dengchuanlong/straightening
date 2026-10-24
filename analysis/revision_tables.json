@@ -1,0 +1,1422 @@
+{
+  "tables": [
+    {
+      "id": "T01",
+      "title": "Input variables and response in the supplied workbook",
+      "section": "Methods",
+      "columns": [
+        "Variable",
+        "Role",
+        "Unit",
+        "Minimum",
+        "Maximum",
+        "Mean \u00b1 SD"
+      ],
+      "rows": [
+        [
+          "width_mm",
+          "Input",
+          "mm",
+          "30.0012",
+          "39.9996",
+          "34.9849 \u00b1 2.8927"
+        ],
+        [
+          "thickness_mm",
+          "Input",
+          "mm",
+          "7.0002",
+          "9.9989",
+          "8.1818 \u00b1 0.7497"
+        ],
+        [
+          "span_mm",
+          "Input",
+          "mm",
+          "180.0026",
+          "259.9999",
+          "220.0392 \u00b1 23.1494"
+        ],
+        [
+          "punch_radius_mm",
+          "Input",
+          "mm",
+          "10.0012",
+          "24.9997",
+          "17.4953 \u00b1 4.3433"
+        ],
+        [
+          "support_radius_mm",
+          "Input",
+          "mm",
+          "10.0014",
+          "24.9996",
+          "17.5150 \u00b1 4.3139"
+        ],
+        [
+          "prebend_stroke_mm",
+          "Input",
+          "mm",
+          "12.0008",
+          "15.9997",
+          "14.0169 \u00b1 1.1612"
+        ],
+        [
+          "reference_stroke_mm",
+          "Response",
+          "mm",
+          "5.6718",
+          "15.8834",
+          "9.7232 \u00b1 1.9706"
+        ]
+      ],
+      "note": "Only the six declared inputs enter prediction. Diagnostic columns are excluded."
+    },
+    {
+      "id": "T02",
+      "title": "Fixed data partitions and their roles",
+      "section": "Methods",
+      "columns": [
+        "Partition",
+        "n",
+        "Thickness (mm)",
+        "Stroke (mm)",
+        "Role"
+      ],
+      "rows": [
+        [
+          "train",
+          4800,
+          "7.001\u20139.000",
+          "5.672\u201314.826",
+          "Coefficient fitting"
+        ],
+        [
+          "validation",
+          1200,
+          "7.000\u20139.000",
+          "5.945\u201315.119",
+          "Selection and interval-scale fitting"
+        ],
+        [
+          "calibration",
+          1000,
+          "7.000\u20139.000",
+          "5.749\u201314.840",
+          "Conformal quantile"
+        ],
+        [
+          "test",
+          1000,
+          "7.004\u20139.000",
+          "5.925\u201314.915",
+          "IID evaluation"
+        ],
+        [
+          "ood",
+          1000,
+          "9.250\u20139.999",
+          "6.402\u201315.883",
+          "Thickness-shift evaluation"
+        ]
+      ],
+      "note": "These inherited partitions were inspected in preceding work; the present revision is exploratory."
+    },
+    {
+      "id": "T03",
+      "title": "Normalization and evaluation configuration",
+      "section": "Methods",
+      "columns": [
+        "Item",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Elastic reference (MPa)",
+          204401.0
+        ],
+        [
+          "Yield reference (MPa)",
+          1000.121
+        ],
+        [
+          "Training seeds",
+          "40, 41, 42"
+        ],
+        [
+          "Bootstrap seed",
+          "43"
+        ],
+        [
+          "Bootstrap replicates",
+          "1,000"
+        ],
+        [
+          "Conformal nominal coverage",
+          "90%"
+        ],
+        [
+          "Calibration rank",
+          "901 of 1,000"
+        ],
+        [
+          "Scale floor (mm)",
+          "0.015"
+        ],
+        [
+          "Features",
+          "Six geometric/loading variables"
+        ],
+        [
+          "Target",
+          "Straightening stroke (mm)"
+        ],
+        [
+          "Learning-curve sizes",
+          "100, 250, 500, 1000, 2000, 4800"
+        ]
+      ],
+      "note": "The fixed material constants set the mechanics reference scale; they are not tuned by evaluation outcomes."
+    },
+    {
+      "id": "T04",
+      "title": "Frozen MGRE settings",
+      "section": "Methods",
+      "columns": [
+        "Setting",
+        "Value"
+      ],
+      "rows": [
+        [
+          "representation",
+          "raw"
+        ],
+        [
+          "degree",
+          "3"
+        ],
+        [
+          "ridge",
+          "0.01"
+        ],
+        [
+          "n_experts",
+          "4"
+        ],
+        [
+          "local_degree",
+          "3"
+        ],
+        [
+          "local_ridge",
+          "1.0"
+        ],
+        [
+          "correction_weight",
+          "1.0"
+        ],
+        [
+          "taper",
+          "True"
+        ],
+        [
+          "basis",
+          "tensor_spline"
+        ],
+        [
+          "knots",
+          "4"
+        ],
+        [
+          "Ablation policy",
+          "Selected full-model parameters retained; remove only the named component without ablation-specific retuning."
+        ],
+        [
+          "Primary selection",
+          "Validation MAE"
+        ],
+        [
+          "Tie-break",
+          "Validation RMSE"
+        ]
+      ],
+      "note": "All selections are frozen before this revision's final evaluation."
+    },
+    {
+      "id": "T05",
+      "title": "Declared validation searches",
+      "section": "Methods",
+      "columns": [
+        "Candidate family",
+        "Validation scores",
+        "Best MAE (mm)",
+        "Corresponding RMSE (mm)"
+      ],
+      "rows": [
+        [
+          "global candidates",
+          27,
+          "0.067379",
+          "0.086871"
+        ],
+        [
+          "gated candidates",
+          36,
+          "0.064466",
+          "0.083649"
+        ],
+        [
+          "svr candidates",
+          36,
+          "0.053311",
+          "0.070235"
+        ],
+        [
+          "spline candidates",
+          27,
+          "0.053881",
+          "0.070915"
+        ],
+        [
+          "spline gated candidates",
+          48,
+          "0.051783",
+          "0.068315"
+        ],
+        [
+          "additional svr candidates",
+          36,
+          "0.055973",
+          "0.075598"
+        ],
+        [
+          "polynomial candidates",
+          18,
+          "0.066975",
+          "0.086794"
+        ],
+        [
+          "post selection validation seeds",
+          3,
+          "0.051763",
+          "0.068234"
+        ],
+        [
+          "Mean",
+          1,
+          "1.579602",
+          "1.889072"
+        ],
+        [
+          "Ridge",
+          3,
+          "0.178043",
+          "0.228171"
+        ],
+        [
+          "PolynomialRidge",
+          18,
+          "0.066975",
+          "0.086794"
+        ],
+        [
+          "RandomForest",
+          2,
+          "0.127659",
+          "0.162172"
+        ],
+        [
+          "HGB",
+          2,
+          "0.077160",
+          "0.097653"
+        ],
+        [
+          "MLP",
+          2,
+          "0.070804",
+          "0.091512"
+        ]
+      ],
+      "note": "Shared-fit shrinkage choices count as separate validation scores. Search budgets are reported rather than assumed equal."
+    },
+    {
+      "id": "T06",
+      "title": "Comparison methods and selected settings",
+      "section": "Methods",
+      "columns": [
+        "Method",
+        "Configuration",
+        "Validation MAE (mm)"
+      ],
+      "rows": [
+        [
+          "Mean",
+          "Training-response mean",
+          "1.579602 \u00b1 0.000000"
+        ],
+        [
+          "Ridge",
+          "Standardized six inputs; {\"alpha\": 0.01}",
+          "0.178043 \u00b1 0.000000"
+        ],
+        [
+          "Polynomial ridge",
+          "Direct target; {\"alpha\": 0.0001, \"degree\": 4, \"representation\": \"log_raw\"}",
+          "0.066975 \u00b1 0.000000"
+        ],
+        [
+          "Random forest",
+          "160 trees; all input features; {\"min_samples_leaf\": 1}",
+          "0.127961 \u00b1 0.001284"
+        ],
+        [
+          "Gradient boosting",
+          "260 iterations; learning rate 0.06; min leaf 20; L2=1; {\"max_leaf_nodes\": 31}",
+          "0.077160 \u00b1 0.000000"
+        ],
+        [
+          "MLP",
+          "64\u201332 tanh units; learning rate 0.003; max 350 iterations; internal early stopping; {\"alpha\": 0.001}",
+          "0.069967 \u00b1 0.001726"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "{\"C\": 128.0, \"epsilon\": 0.035, \"gamma\": 0.08}",
+          "0.053311 \u00b1 0.000000"
+        ],
+        [
+          "Legacy MGRE",
+          "Three full-covariance Gaussian components; HGB local experts; global SVR; validation blend per seed",
+          "0.054629 \u00b1 0.000096"
+        ],
+        [
+          "MGRE",
+          "Pairwise cubic splines: 4 knots, ridge 0.01; 4 Gaussian-gated degree-3 ridge-1.0 residual experts; beta=1.0; exp(-4d) support taper",
+          "0.051881 \u00b1 0.000187"
+        ],
+        [
+          "Common interval estimator",
+          "HGB absolute error, 80 iterations, 7 leaves, min_leaf45, l2=2, learning_rate=.06",
+          "\u2014"
+        ]
+      ],
+      "note": "Validation MAE is mean \u00b1 sample SD across seeds. All models share the same input columns, train/validation/calibration partitions and normalized split-conformal construction."
+    },
+    {
+      "id": "T07",
+      "title": "IID predictive accuracy",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "MAE (mm)",
+        "RMSE (mm)",
+        "MAPE (%)",
+        "R\u00b2",
+        "P95 error (mm)",
+        "Max. error (mm)"
+      ],
+      "rows": [
+        [
+          "Mean",
+          "1.6534 \u00b1 0.0000",
+          "1.9683 \u00b1 0.0000",
+          "18.117 \u00b1 0.000",
+          "-0.0002 \u00b1 0.0000",
+          "3.4544 \u00b1 0.0000",
+          "5.2631 \u00b1 0.0000"
+        ],
+        [
+          "Ridge",
+          "0.1883 \u00b1 0.0000",
+          "0.2426 \u00b1 0.0000",
+          "2.070 \u00b1 0.000",
+          "0.9848 \u00b1 0.0000",
+          "0.5013 \u00b1 0.0000",
+          "0.8623 \u00b1 0.0000"
+        ],
+        [
+          "Polynomial ridge",
+          "0.0666 \u00b1 0.0000",
+          "0.0853 \u00b1 0.0000",
+          "0.725 \u00b1 0.000",
+          "0.9981 \u00b1 0.0000",
+          "0.1705 \u00b1 0.0000",
+          "0.3338 \u00b1 0.0000"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "0.0555 \u00b1 0.0000",
+          "0.0718 \u00b1 0.0000",
+          "0.615 \u00b1 0.000",
+          "0.9987 \u00b1 0.0000",
+          "0.1419 \u00b1 0.0000",
+          "0.2550 \u00b1 0.0000"
+        ],
+        [
+          "Random forest",
+          "0.1321 \u00b1 0.0007",
+          "0.1646 \u00b1 0.0007",
+          "1.403 \u00b1 0.007",
+          "0.9930 \u00b1 0.0001",
+          "0.3242 \u00b1 0.0047",
+          "0.6058 \u00b1 0.0453"
+        ],
+        [
+          "Gradient boosting",
+          "0.0819 \u00b1 0.0000",
+          "0.1030 \u00b1 0.0000",
+          "0.878 \u00b1 0.000",
+          "0.9973 \u00b1 0.0000",
+          "0.1978 \u00b1 0.0000",
+          "0.4362 \u00b1 0.0000"
+        ],
+        [
+          "MLP",
+          "0.0695 \u00b1 0.0028",
+          "0.0886 \u00b1 0.0036",
+          "0.752 \u00b1 0.028",
+          "0.9980 \u00b1 0.0002",
+          "0.1754 \u00b1 0.0054",
+          "0.3467 \u00b1 0.0178"
+        ],
+        [
+          "Legacy MGRE",
+          "0.0550 \u00b1 0.0001",
+          "0.0714 \u00b1 0.0002",
+          "0.606 \u00b1 0.001",
+          "0.9987 \u00b1 0.0000",
+          "0.1402 \u00b1 0.0018",
+          "0.2810 \u00b1 0.0080"
+        ],
+        [
+          "MGRE",
+          "0.0522 \u00b1 0.0001",
+          "0.0671 \u00b1 0.0002",
+          "0.577 \u00b1 0.001",
+          "0.9988 \u00b1 0.0000",
+          "0.1361 \u00b1 0.0027",
+          "0.2413 \u00b1 0.0024"
+        ]
+      ],
+      "note": "Mean \u00b1 sample SD across training seeds 40, 41 and 42; deterministic methods repeat exactly."
+    },
+    {
+      "id": "T08",
+      "title": "Predictive accuracy under thickness shift",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "MAE (mm)",
+        "RMSE (mm)",
+        "MAPE (%)",
+        "R\u00b2",
+        "P95 error (mm)",
+        "Max. error (mm)"
+      ],
+      "rows": [
+        [
+          "Mean",
+          "1.9764 \u00b1 0.0000",
+          "2.3984 \u00b1 0.0000",
+          "18.444 \u00b1 0.000",
+          "-0.1312 \u00b1 0.0000",
+          "4.7125 \u00b1 0.0000",
+          "6.2319 \u00b1 0.0000"
+        ],
+        [
+          "Ridge",
+          "0.3521 \u00b1 0.0000",
+          "0.4579 \u00b1 0.0000",
+          "3.286 \u00b1 0.000",
+          "0.9588 \u00b1 0.0000",
+          "0.9706 \u00b1 0.0000",
+          "1.3677 \u00b1 0.0000"
+        ],
+        [
+          "Polynomial ridge",
+          "0.1261 \u00b1 0.0000",
+          "0.1621 \u00b1 0.0000",
+          "1.257 \u00b1 0.000",
+          "0.9948 \u00b1 0.0000",
+          "0.3297 \u00b1 0.0000",
+          "0.8548 \u00b1 0.0000"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "0.2002 \u00b1 0.0000",
+          "0.2667 \u00b1 0.0000",
+          "1.888 \u00b1 0.000",
+          "0.9860 \u00b1 0.0000",
+          "0.5655 \u00b1 0.0000",
+          "0.9370 \u00b1 0.0000"
+        ],
+        [
+          "Random forest",
+          "0.5290 \u00b1 0.0012",
+          "0.6154 \u00b1 0.0018",
+          "4.827 \u00b1 0.011",
+          "0.9255 \u00b1 0.0004",
+          "1.1294 \u00b1 0.0093",
+          "1.5958 \u00b1 0.0086"
+        ],
+        [
+          "Gradient boosting",
+          "0.4324 \u00b1 0.0000",
+          "0.5138 \u00b1 0.0000",
+          "3.921 \u00b1 0.000",
+          "0.9481 \u00b1 0.0000",
+          "0.9983 \u00b1 0.0000",
+          "1.2781 \u00b1 0.0000"
+        ],
+        [
+          "MLP",
+          "0.1630 \u00b1 0.0272",
+          "0.2297 \u00b1 0.0328",
+          "1.520 \u00b1 0.234",
+          "0.9895 \u00b1 0.0029",
+          "0.4708 \u00b1 0.0807",
+          "1.1599 \u00b1 0.0615"
+        ],
+        [
+          "Legacy MGRE",
+          "0.3270 \u00b1 0.0011",
+          "0.3975 \u00b1 0.0011",
+          "3.141 \u00b1 0.011",
+          "0.9689 \u00b1 0.0002",
+          "0.7627 \u00b1 0.0017",
+          "1.1907 \u00b1 0.0027"
+        ],
+        [
+          "MGRE",
+          "0.1274 \u00b1 0.0014",
+          "0.1619 \u00b1 0.0018",
+          "1.250 \u00b1 0.013",
+          "0.9948 \u00b1 0.0001",
+          "0.3176 \u00b1 0.0071",
+          "0.6222 \u00b1 0.0111"
+        ]
+      ],
+      "note": "Mean \u00b1 sample SD across training seeds 40, 41 and 42; deterministic methods repeat exactly."
+    },
+    {
+      "id": "T09",
+      "title": "Module removal experiments",
+      "section": "Results",
+      "columns": [
+        "Variant",
+        "IID MAE (mm)",
+        "IID RMSE (mm)",
+        "OOD MAE (mm)",
+        "OOD RMSE (mm)"
+      ],
+      "rows": [
+        [
+          "MGRE",
+          "0.0522 \u00b1 0.0001",
+          "0.0671 \u00b1 0.0002",
+          "0.1274 \u00b1 0.0014",
+          "0.1619 \u00b1 0.0018"
+        ],
+        [
+          "Without mechanics",
+          "0.0523 \u00b1 0.0004",
+          "0.0670 \u00b1 0.0004",
+          "0.1382 \u00b1 0.0017",
+          "0.1804 \u00b1 0.0027"
+        ],
+        [
+          "Without residual prior",
+          "0.0523 \u00b1 0.0001",
+          "0.0670 \u00b1 0.0002",
+          "0.1412 \u00b1 0.0011",
+          "0.1848 \u00b1 0.0017"
+        ],
+        [
+          "Additive spline trend",
+          "0.0660 \u00b1 0.0006",
+          "0.0839 \u00b1 0.0009",
+          "0.2084 \u00b1 0.0015",
+          "0.2658 \u00b1 0.0022"
+        ],
+        [
+          "Single local expert",
+          "0.0537 \u00b1 0.0000",
+          "0.0687 \u00b1 0.0000",
+          "0.1281 \u00b1 0.0000",
+          "0.1624 \u00b1 0.0000"
+        ],
+        [
+          "Global trend only",
+          "0.0553 \u00b1 0.0000",
+          "0.0706 \u00b1 0.0000",
+          "0.1314 \u00b1 0.0000",
+          "0.1664 \u00b1 0.0000"
+        ],
+        [
+          "Without support taper",
+          "0.0522 \u00b1 0.0001",
+          "0.0671 \u00b1 0.0002",
+          "0.1231 \u00b1 0.0052",
+          "0.1566 \u00b1 0.0068"
+        ]
+      ],
+      "note": "Ablations retain the full-model selected hyperparameters and remove their named component without retuning."
+    },
+    {
+      "id": "T10",
+      "title": "Prediction-interval calibration and efficiency",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "Split",
+        "Coverage (%)",
+        "Width (mm)",
+        "Interval score (mm)"
+      ],
+      "rows": [
+        [
+          "MGRE",
+          "IID",
+          "91.07 \u00b1 1.16",
+          "0.2285 \u00b1 0.0051",
+          "0.2768 \u00b1 0.0019"
+        ],
+        [
+          "Legacy MGRE",
+          "IID",
+          "91.27 \u00b1 0.67",
+          "0.2452 \u00b1 0.0047",
+          "0.2956 \u00b1 0.0021"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "IID",
+          "91.20 \u00b1 0.00",
+          "0.2424 \u00b1 0.0000",
+          "0.2957 \u00b1 0.0000"
+        ],
+        [
+          "Polynomial ridge",
+          "IID",
+          "90.30 \u00b1 0.00",
+          "0.2748 \u00b1 0.0000",
+          "0.3426 \u00b1 0.0000"
+        ],
+        [
+          "MLP",
+          "IID",
+          "89.10 \u00b1 0.69",
+          "0.2902 \u00b1 0.0044",
+          "0.3677 \u00b1 0.0102"
+        ],
+        [
+          "Gradient boosting",
+          "IID",
+          "91.30 \u00b1 0.00",
+          "0.3504 \u00b1 0.0000",
+          "0.4203 \u00b1 0.0000"
+        ],
+        [
+          "MGRE",
+          "OOD",
+          "69.33 \u00b1 3.79",
+          "0.3137 \u00b1 0.0197",
+          "0.8850 \u00b1 0.0566"
+        ],
+        [
+          "Legacy MGRE",
+          "OOD",
+          "30.67 \u00b1 0.55",
+          "0.3576 \u00b1 0.0043",
+          "3.8407 \u00b1 0.0421"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "OOD",
+          "54.80 \u00b1 0.00",
+          "0.3463 \u00b1 0.0000",
+          "1.9089 \u00b1 0.0000"
+        ],
+        [
+          "Polynomial ridge",
+          "OOD",
+          "71.50 \u00b1 0.00",
+          "0.3332 \u00b1 0.0000",
+          "0.8307 \u00b1 0.0000"
+        ],
+        [
+          "MLP",
+          "OOD",
+          "62.07 \u00b1 4.85",
+          "0.3173 \u00b1 0.0349",
+          "1.4967 \u00b1 0.3068"
+        ],
+        [
+          "Gradient boosting",
+          "OOD",
+          "26.20 \u00b1 0.00",
+          "0.4413 \u00b1 0.0000",
+          "5.1927 \u00b1 0.0000"
+        ]
+      ],
+      "note": "Nominal coverage is 90%; coverage closer to the target, narrower intervals at comparable coverage, and lower interval score are preferable. OOD exchangeability is not assumed."
+    },
+    {
+      "id": "T11",
+      "title": "Seed-level outcomes for the central comparison",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "Seed",
+        "Validation MAE",
+        "IID RMSE",
+        "OOD RMSE",
+        "Calibration q"
+      ],
+      "rows": [
+        [
+          "Tuned RBF-SVR",
+          40,
+          "0.053311",
+          "0.071780",
+          "0.266663",
+          "2.698082"
+        ],
+        [
+          "Tuned RBF-SVR",
+          41,
+          "0.053311",
+          "0.071780",
+          "0.266663",
+          "2.698082"
+        ],
+        [
+          "Tuned RBF-SVR",
+          42,
+          "0.053311",
+          "0.071780",
+          "0.266663",
+          "2.698082"
+        ],
+        [
+          "Legacy MGRE",
+          40,
+          "0.054590",
+          "0.071372",
+          "0.397528",
+          "2.589827"
+        ],
+        [
+          "Legacy MGRE",
+          41,
+          "0.054739",
+          "0.071576",
+          "0.398632",
+          "2.677498"
+        ],
+        [
+          "Legacy MGRE",
+          42,
+          "0.054559",
+          "0.071240",
+          "0.396339",
+          "2.626552"
+        ],
+        [
+          "MGRE",
+          40,
+          "0.051783",
+          "0.066990",
+          "0.163378",
+          "2.620689"
+        ],
+        [
+          "MGRE",
+          41,
+          "0.052096",
+          "0.067409",
+          "0.159904",
+          "2.720730"
+        ],
+        [
+          "MGRE",
+          42,
+          "0.051763",
+          "0.067003",
+          "0.162384",
+          "2.664374"
+        ]
+      ],
+      "note": "Error columns are in mm. q is the normalized finite-sample conformal quantile."
+    },
+    {
+      "id": "T12",
+      "title": "Paired bootstrap comparison of fixed mean predictions",
+      "section": "Results",
+      "columns": [
+        "Split",
+        "Comparator",
+        "\u0394MAE (mm)",
+        "95% CI",
+        "\u0394RMSE (mm)",
+        "95% CI"
+      ],
+      "rows": [
+        [
+          "IID",
+          "Tuned RBF-SVR",
+          "-0.003424",
+          "[-0.005304, -0.001683]",
+          "-0.004765",
+          "[-0.006919, -0.002480]"
+        ],
+        [
+          "IID",
+          "Legacy MGRE",
+          "-0.002742",
+          "[-0.004711, -0.000916]",
+          "-0.004227",
+          "[-0.006492, -0.002054]"
+        ],
+        [
+          "IID",
+          "Polynomial ridge",
+          "-0.014509",
+          "[-0.017549, -0.011395]",
+          "-0.018267",
+          "[-0.021731, -0.014723]"
+        ],
+        [
+          "IID",
+          "Global trend only",
+          "-0.003151",
+          "[-0.004282, -0.002043]",
+          "-0.003602",
+          "[-0.004969, -0.002185]"
+        ],
+        [
+          "IID",
+          "MLP",
+          "-0.013351",
+          "[-0.016487, -0.010380]",
+          "-0.016496",
+          "[-0.020096, -0.013037]"
+        ],
+        [
+          "IID",
+          "Gradient boosting",
+          "-0.029754",
+          "[-0.033587, -0.025724]",
+          "-0.035942",
+          "[-0.040696, -0.031333]"
+        ],
+        [
+          "OOD",
+          "Tuned RBF-SVR",
+          "-0.072910",
+          "[-0.082957, -0.062813]",
+          "-0.104912",
+          "[-0.117514, -0.091745]"
+        ],
+        [
+          "OOD",
+          "Legacy MGRE",
+          "-0.199627",
+          "[-0.213327, -0.185973]",
+          "-0.235728",
+          "[-0.250818, -0.220668]"
+        ],
+        [
+          "OOD",
+          "Polynomial ridge",
+          "0.001266",
+          "[-0.006920, 0.008607]",
+          "-0.000382",
+          "[-0.010414, 0.008951]"
+        ],
+        [
+          "OOD",
+          "Global trend only",
+          "-0.004026",
+          "[-0.004814, -0.003192]",
+          "-0.004655",
+          "[-0.005544, -0.003796]"
+        ],
+        [
+          "OOD",
+          "MLP",
+          "-0.026344",
+          "[-0.034998, -0.018333]",
+          "-0.058733",
+          "[-0.074343, -0.043593]"
+        ],
+        [
+          "OOD",
+          "Gradient boosting",
+          "-0.305108",
+          "[-0.321230, -0.289595]",
+          "-0.352084",
+          "[-0.369800, -0.335420]"
+        ]
+      ],
+      "note": "Differences are MGRE minus comparator; negative values favor MGRE. Row resampling uses seed 43 and 1,000 replicates; intervals are conditional on fitted models."
+    },
+    {
+      "id": "T13",
+      "title": "Fixed-setting learning curves",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "Training n",
+        "IID MAE (mm)",
+        "IID RMSE (mm)",
+        "OOD RMSE (mm)"
+      ],
+      "rows": [
+        [
+          "MGRE",
+          100,
+          "0.1085 \u00b1 0.0041",
+          "0.1396 \u00b1 0.0045",
+          "0.9475 \u00b1 0.1156"
+        ],
+        [
+          "MGRE",
+          250,
+          "0.0925 \u00b1 0.0039",
+          "0.1223 \u00b1 0.0084",
+          "0.6355 \u00b1 0.3442"
+        ],
+        [
+          "MGRE",
+          500,
+          "0.0693 \u00b1 0.0043",
+          "0.0895 \u00b1 0.0060",
+          "0.4462 \u00b1 0.1187"
+        ],
+        [
+          "MGRE",
+          1000,
+          "0.0597 \u00b1 0.0029",
+          "0.0774 \u00b1 0.0034",
+          "0.3406 \u00b1 0.0985"
+        ],
+        [
+          "MGRE",
+          2000,
+          "0.0549 \u00b1 0.0004",
+          "0.0708 \u00b1 0.0008",
+          "0.2018 \u00b1 0.0083"
+        ],
+        [
+          "MGRE",
+          4800,
+          "0.0522 \u00b1 0.0001",
+          "0.0670 \u00b1 0.0002",
+          "0.1597 \u00b1 0.0013"
+        ],
+        [
+          "Tuned RBF-SVR",
+          100,
+          "0.1987 \u00b1 0.0080",
+          "0.2746 \u00b1 0.0121",
+          "0.8241 \u00b1 0.0666"
+        ],
+        [
+          "Tuned RBF-SVR",
+          250,
+          "0.1074 \u00b1 0.0032",
+          "0.1449 \u00b1 0.0048",
+          "0.5821 \u00b1 0.0742"
+        ],
+        [
+          "Tuned RBF-SVR",
+          500,
+          "0.0906 \u00b1 0.0024",
+          "0.1223 \u00b1 0.0065",
+          "0.5147 \u00b1 0.0246"
+        ],
+        [
+          "Tuned RBF-SVR",
+          1000,
+          "0.0709 \u00b1 0.0033",
+          "0.0941 \u00b1 0.0063",
+          "0.4006 \u00b1 0.0543"
+        ],
+        [
+          "Tuned RBF-SVR",
+          2000,
+          "0.0607 \u00b1 0.0007",
+          "0.0796 \u00b1 0.0019",
+          "0.3147 \u00b1 0.0412"
+        ],
+        [
+          "Tuned RBF-SVR",
+          4800,
+          "0.0555 \u00b1 0.0000",
+          "0.0718 \u00b1 0.0000",
+          "0.2666 \u00b1 0.0006"
+        ]
+      ],
+      "note": "Nested subset-order seeds are 740, 741 and 742, corresponding to training seeds 40, 41 and 42. Full-data selected settings remain fixed; no learning-curve outcome selects a model."
+    },
+    {
+      "id": "T14",
+      "title": "Thickness-stratified absolute errors",
+      "section": "Results",
+      "columns": [
+        "Split",
+        "Thickness (mm)",
+        "n",
+        "MGRE MAE",
+        "SVR MAE",
+        "Legacy MAE"
+      ],
+      "rows": [
+        [
+          "IID",
+          "7.004\u20137.495",
+          250,
+          "0.0582 \u00b1 0.0002",
+          "0.0602 \u00b1 0.0000",
+          "0.0610 \u00b1 0.0002"
+        ],
+        [
+          "IID",
+          "7.495\u20138.027",
+          250,
+          "0.0459 \u00b1 0.0001",
+          "0.0489 \u00b1 0.0000",
+          "0.0471 \u00b1 0.0003"
+        ],
+        [
+          "IID",
+          "8.027\u20138.498",
+          250,
+          "0.0457 \u00b1 0.0001",
+          "0.0467 \u00b1 0.0000",
+          "0.0455 \u00b1 0.0004"
+        ],
+        [
+          "IID",
+          "8.498\u20139.000",
+          250,
+          "0.0591 \u00b1 0.0001",
+          "0.0664 \u00b1 0.0000",
+          "0.0663 \u00b1 0.0002"
+        ],
+        [
+          "OOD",
+          "9.250\u20139.438",
+          250,
+          "0.1018 \u00b1 0.0008",
+          "0.1157 \u00b1 0.0000",
+          "0.1550 \u00b1 0.0007"
+        ],
+        [
+          "OOD",
+          "9.438\u20139.627",
+          250,
+          "0.1133 \u00b1 0.0009",
+          "0.1395 \u00b1 0.0000",
+          "0.2377 \u00b1 0.0007"
+        ],
+        [
+          "OOD",
+          "9.627\u20139.820",
+          250,
+          "0.1401 \u00b1 0.0018",
+          "0.2330 \u00b1 0.0000",
+          "0.3743 \u00b1 0.0015"
+        ],
+        [
+          "OOD",
+          "9.820\u20139.999",
+          250,
+          "0.1545 \u00b1 0.0021",
+          "0.3127 \u00b1 0.0000",
+          "0.5408 \u00b1 0.0018"
+        ]
+      ],
+      "note": "Quartile boundaries are descriptive only and do not tune any model; MAE is in mm."
+    },
+    {
+      "id": "T15",
+      "title": "Local sensitivity of predicted stroke",
+      "section": "Results",
+      "columns": [
+        "Model",
+        "Input",
+        "Median derivative",
+        "10th percentile",
+        "90th percentile"
+      ],
+      "rows": [
+        [
+          "MGRE",
+          "width_mm",
+          "0.0399",
+          "0.0185",
+          "0.0643"
+        ],
+        [
+          "MGRE",
+          "thickness_mm",
+          "0.5137",
+          "0.2569",
+          "0.7907"
+        ],
+        [
+          "MGRE",
+          "span_mm",
+          "0.0778",
+          "0.0610",
+          "0.0920"
+        ],
+        [
+          "MGRE",
+          "punch_radius_mm",
+          "-0.0070",
+          "-0.0587",
+          "0.0350"
+        ],
+        [
+          "MGRE",
+          "support_radius_mm",
+          "0.0013",
+          "-0.0389",
+          "0.0529"
+        ],
+        [
+          "MGRE",
+          "prebend_stroke_mm",
+          "0.6501",
+          "0.4043",
+          "0.7976"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "width_mm",
+          "0.0403",
+          "0.0177",
+          "0.0691"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "thickness_mm",
+          "0.4979",
+          "0.2503",
+          "0.8037"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "span_mm",
+          "0.0773",
+          "0.0612",
+          "0.0913"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "punch_radius_mm",
+          "-0.0100",
+          "-0.0576",
+          "0.0302"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "support_radius_mm",
+          "0.0016",
+          "-0.0417",
+          "0.0563"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "prebend_stroke_mm",
+          "0.6411",
+          "0.4145",
+          "0.8069"
+        ],
+        [
+          "Legacy MGRE",
+          "width_mm",
+          "0.0317",
+          "0.0100",
+          "0.0627"
+        ],
+        [
+          "Legacy MGRE",
+          "thickness_mm",
+          "0.3029",
+          "0.0952",
+          "0.9018"
+        ],
+        [
+          "Legacy MGRE",
+          "span_mm",
+          "0.0784",
+          "0.0589",
+          "0.0932"
+        ],
+        [
+          "Legacy MGRE",
+          "punch_radius_mm",
+          "-0.0060",
+          "-0.0518",
+          "0.0321"
+        ],
+        [
+          "Legacy MGRE",
+          "support_radius_mm",
+          "0.0010",
+          "-0.0358",
+          "0.0487"
+        ],
+        [
+          "Legacy MGRE",
+          "prebend_stroke_mm",
+          "0.6194",
+          "0.4010",
+          "0.7942"
+        ]
+      ],
+      "note": "Central differences at 300 fixed validation inputs, seed40 model; step is 0.1% of training feature range. Derivative unit is mm/mm. These are model responses, not causal effects."
+    },
+    {
+      "id": "T16",
+      "title": "Computational cost on the recorded environment",
+      "section": "Results",
+      "columns": [
+        "Method",
+        "Fit time (s)",
+        "IID inference /1,000 (s)",
+        "OOD inference /1,000 (s)"
+      ],
+      "rows": [
+        [
+          "Mean",
+          "0.000 \u00b1 0.000",
+          "0.00002 \u00b1 0.00000",
+          "0.00003 \u00b1 0.00000"
+        ],
+        [
+          "Ridge",
+          "0.002 \u00b1 0.000",
+          "0.00023 \u00b1 0.00004",
+          "0.00026 \u00b1 0.00005"
+        ],
+        [
+          "Polynomial ridge",
+          "0.017 \u00b1 0.001",
+          "0.00130 \u00b1 0.00002",
+          "0.00136 \u00b1 0.00006"
+        ],
+        [
+          "Tuned RBF-SVR",
+          "31.630 \u00b1 0.142",
+          "0.15659 \u00b1 0.00278",
+          "0.15640 \u00b1 0.00294"
+        ],
+        [
+          "Random forest",
+          "3.475 \u00b1 0.038",
+          "0.02917 \u00b1 0.00025",
+          "0.02356 \u00b1 0.00021"
+        ],
+        [
+          "Gradient boosting",
+          "0.421 \u00b1 0.004",
+          "0.02218 \u00b1 0.00004",
+          "0.02089 \u00b1 0.00039"
+        ],
+        [
+          "MLP",
+          "1.653 \u00b1 0.108",
+          "0.00126 \u00b1 0.00009",
+          "0.00124 \u00b1 0.00003"
+        ],
+        [
+          "Legacy MGRE",
+          "11.196 \u00b1 0.133",
+          "0.24502 \u00b1 0.01247",
+          "0.23304 \u00b1 0.00328"
+        ],
+        [
+          "MGRE",
+          "0.128 \u00b1 0.008",
+          "0.00418 \u00b1 0.00040",
+          "0.00401 \u00b1 0.00007"
+        ]
+      ],
+      "note": "Single-thread wall time is environment-dependent. Fit time excludes prior validation search and conformal-scale fitting."
+    },
+    {
+      "id": "T17",
+      "title": "Reproduction record",
+      "section": "Methods",
+      "columns": [
+        "Item",
+        "Recorded value"
+      ],
+      "rows": [
+        [
+          "Dataset SHA-256",
+          "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b"
+        ],
+        [
+          "Development specification SHA-256",
+          "20583c281eb1cbf012df7872862d76bb02cac20e10152dc64bcb6820e85aeccb"
+        ],
+        [
+          "Evaluation protocol SHA-256",
+          "5060dcfbbc313698d4d28d5739534b0fd007a3689470e39cc2a96b26e7985628"
+        ],
+        [
+          "Model-seed bundles",
+          45
+        ],
+        [
+          "Learning-curve fits",
+          36
+        ],
+        [
+          "Evaluation rows per split",
+          "1,000"
+        ],
+        [
+          "Run elapsed seconds",
+          "313.69"
+        ],
+        [
+          "Numerical threads",
+          1
+        ],
+        [
+          "Logical CPUs",
+          12
+        ],
+        [
+          "python",
+          "3.12.14"
+        ],
+        [
+          "numpy",
+          "2.3.5"
+        ],
+        [
+          "scipy",
+          "1.16.3"
+        ],
+        [
+          "scikit_learn",
+          "1.7.2"
+        ],
+        [
+          "joblib",
+          "1.6.0"
+        ]
+      ],
+      "note": "Full precision predictions and executable analysis scripts accompany the manuscript."
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-﻿Subset,Predictor,C90 %,W90 mm,Bias mm,P95 |error| mm
-test,MGRE full,90.50,0.2404,-0.00159,0.14058
-test,RBF SVR,91.10,0.2413,-0.00175,0.13984
-test,Constant interval scale,91.10,0.2409,-0.00159,0.14058
-ood,MGRE full,30.30,0.3535,-0.31678,0.76272
-ood,RBF SVR,53.00,0.3272,-0.08239,0.62656
-ood,Constant interval scale,19.90,0.2409,-0.31678,0.76272
