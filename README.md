@@ -136,9 +136,5 @@ figures to their generating code. A fresh run writes every prediction to
 
 ## Source and rights
 
-`RELEASE_MANIFEST.json` records hashes of the published files. Native solver
-archives, third-party publisher PDFs, the Word manuscript and large fitted model
-bundles are not included. The separate historical circular-beam study provides
-context and does not supply the current rectangular-schema rows. Publication of
-these files does not grant an additional license to third-party source material.
-The repository does not yet contain a separate software or data license grant.
+`RELEASE_MANIFEST.json` records hashes of the published files. The separate historical circular-beam study provides
+context.
