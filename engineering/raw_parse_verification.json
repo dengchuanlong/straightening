@@ -1,0 +1,142 @@
+{
+  "operation": "read_only_rect_model_parse_saved_text",
+  "FE_invocations": 0,
+  "POST_invocations": 0,
+  "source_project_files_written": false,
+  "parser_sha256": "4a7f8f80637a25eb048564d7dc8960794e9cf0a9c82e9d56084f370835e05627",
+  "cases": [
+    {
+      "case_id": "OPTVAL_B_B0001_V001",
+      "folder": "G:\\Workspace\\Codex\\0928\\straightening_study\\full3d_rect_20261007\\optimized_runs\\OPTVAL_B_B0001_V001\\S14p641792_3e46c34cacd9",
+      "stroke_mm": 14.641792,
+      "checks": {
+        "initial_error_mm": {
+          "stored": 5.347280639398473,
+          "recomputed": 5.347280639398473,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "final_error_mm": {
+          "stored": 0.11991514155457911,
+          "recomputed": 0.11991514155457911,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "peak_press_force_N": {
+          "stored": 7632.579718884668,
+          "recomputed": 7632.579718884668,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_ip_accumulated_plastic_strain": {
+          "stored": 0.01923528127372265,
+          "recomputed": 0.01923528127372265,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_abs_ip_axial_total_strain": {
+          "stored": 0.01669039543856418,
+          "recomputed": 0.01669039543856418,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        }
+      },
+      "all_five_exact_equal": true,
+      "source_file_size_mtime_unchanged": true,
+      "raw_IP_coverage_complete": true,
+      "raw_extrema_crosscheck_passed": true,
+      "initial_all_tools_open": true,
+      "final_all_tools_open": true,
+      "seconds": 33.87062619999051
+    },
+    {
+      "case_id": "OPTVAL_B_P0008_V001",
+      "folder": "G:\\Workspace\\Codex\\0928\\straightening_study\\full3d_rect_20261007\\optimized_runs\\OPTVAL_B_P0008_V001\\S8p103878_1a086f567f6e",
+      "stroke_mm": 8.103878,
+      "checks": {
+        "initial_error_mm": {
+          "stored": 3.465323155821532,
+          "recomputed": 3.465323155821532,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "final_error_mm": {
+          "stored": 0.11518078590588862,
+          "recomputed": 0.11518078590588862,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "peak_press_force_N": {
+          "stored": 9234.62849693926,
+          "recomputed": 9234.62849693926,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_ip_accumulated_plastic_strain": {
+          "stored": 0.01632114313542843,
+          "recomputed": 0.01632114313542843,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_abs_ip_axial_total_strain": {
+          "stored": 0.01459245165606656,
+          "recomputed": 0.01459245165606656,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        }
+      },
+      "all_five_exact_equal": true,
+      "source_file_size_mtime_unchanged": true,
+      "raw_IP_coverage_complete": true,
+      "raw_extrema_crosscheck_passed": true,
+      "initial_all_tools_open": true,
+      "final_all_tools_open": true,
+      "seconds": 33.17031180000049
+    },
+    {
+      "case_id": "OPTVAL_B_R0004_V001",
+      "folder": "G:\\Workspace\\Codex\\0928\\straightening_study\\full3d_rect_20261007\\optimized_runs\\OPTVAL_B_R0004_V001\\S15p238613_ae746de393ab",
+      "stroke_mm": 15.238613,
+      "checks": {
+        "initial_error_mm": {
+          "stored": 6.513006470097734,
+          "recomputed": 6.513006470097734,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "final_error_mm": {
+          "stored": 0.14039192416958007,
+          "recomputed": 0.14039192416958007,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "peak_press_force_N": {
+          "stored": 10037.327186114451,
+          "recomputed": 10037.327186114451,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_ip_accumulated_plastic_strain": {
+          "stored": 0.02438824810087681,
+          "recomputed": 0.02438824810087681,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        },
+        "max_abs_ip_axial_total_strain": {
+          "stored": 0.01913223142087923,
+          "recomputed": 0.01913223142087923,
+          "absolute_difference": 0.0,
+          "exact_equal": true
+        }
+      },
+      "all_five_exact_equal": true,
+      "source_file_size_mtime_unchanged": true,
+      "raw_IP_coverage_complete": true,
+      "raw_extrema_crosscheck_passed": true,
+      "initial_all_tools_open": true,
+      "final_all_tools_open": true,
+      "seconds": 33.27610759998788
+    }
+  ],
+  "all_passed": true
+}

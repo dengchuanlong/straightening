@@ -1,6 +1,14 @@
 # Data provenance and reproducibility scope
 
-The author reaffirmed on 24 October 2026 that the dataset was independently produced by finite-element analysis. This is recorded as an author declaration; no new native solver files accompanied this revision. The existing numerical comparison and its audit status are retained.
+The author reaffirmed on 24 and 26 October 2026 that the current 9,000-row table
+was completed by FE work on an institutional laboratory server. This remains an
+author declaration about that table. On 26 October the author permitted disclosure
+of the supplied local reference project's methods and data. Selected native
+inputs, solver receipts and search records for three local rectangular-bar cases
+are now supplied in `engineering/Supplementary_Software_1.zip`. These establish
+traceable local calculations; they do not provide the missing per-row native
+execution mapping for the 9,000 learning labels. The analytical numerical
+correspondence and its audit status are retained.
 
 The supplied source file was `fea_dataset.xlsx`, worksheet `dataset`, header
 row 1 and observation rows 2–9001. Columns E–J are the six predictors, K is the
@@ -78,8 +86,43 @@ The historical three-diameter circular-beam report is a distinct four-input
 pilot. Its reported endpoints provide process context; they do not supply a
 row-level origin or native FE validation for the present six-input benchmark.
 
-No raw third-party OPARA data, publisher PDFs, personal author metadata or
-unrelated simulation archives are included in this model release. The source
-workbook itself is represented by its numeric export, source coordinates and
+The 26 October addition includes selected OPARA-derived benchmark comparison
+records with their original attribution and CC BY-NC 4.0 conditions. The raw
+material-specimen archive, large FE result/restart files, complete copied-field
+text exports, publisher PDFs and manuscript drafts are not included. The source
+workbook remains represented by its numeric export, source coordinates and
 checksum. A verified FE replacement would require its own traceable export and
 a fresh run rather than relabeling the current records.
+
+## Why the earlier analytical artifacts are retained
+
+The original generator explicitly describes a synthetic analytical toy, using a
+designed nonlinear mean and artificial heteroscedastic Gaussian noise; it does
+not invoke an FE solver. The original table and an in-memory reconstruction both
+match the current nine numerical columns and all partition assignments. They
+therefore retain provenance value even though the current training entry point
+does not call the old generator. Deleting that evidence would neither change the
+current targets nor resolve their origin.
+
+The current MGRE positive mechanical scale is a separate, active part of the
+prediction model. It is not the full historical label generator and remains in
+use. The latest disclosure does not change either algorithm or any data value.
+
+## Scope of the newly disclosed FE evidence
+
+The reference framework uses RECT3D004, the v002 CHAB3–Voce material card and
+the B mesh. The three historical best-sampled local strokes are 14.641792,
+8.103878 and 15.238613 mm; their final unloaded deviations are approximately
+0.119915, 0.115181 and 0.140392 mm. They are executed reference actions, not
+forward evaluations of MGRE predictions, and are not asserted to be rows of the
+current learning table. Best-sampled search, later policy-conditioned feasible
+action and the existing reference_stroke_mm target remain distinct definitions.
+Formal dataset qualification remains false in the supplied local records.
+
+The 15/15 matching extraction checks used large raw text files retained locally.
+The compact public package omits those large fields and native restart binaries,
+so it does not offer a standalone replay of that check or the warm calculations.
+Its portable wrapper only prepares a cold-core input and does not launch MAPDL.
+See engineering/FE_REFERENCE_METHODS.md and engineering/PACKAGE_README.md for
+the exact reproduction levels, public benchmark scope and remaining dependencies.
+

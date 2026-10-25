@@ -1,6 +1,6 @@
 {
-  "schema": "straightening-mgre-revision-release-v2",
-  "release_date": "2026-10-24",
+  "schema": "straightening-mgre-open-fe-reference-release-v3",
+  "release_date": "2026-10-26",
   "training_seeds": [
     40,
     41,
@@ -22,6 +22,18 @@
       "bytes": 128,
       "sha256": "3662a6682c46dbf28bdebf11619fd33b4c964268d72c47c5a432050a9d0702bb",
       "git_blob_sha": "4fe2c671548358407528d52d1ea4bb830ebd9e5c"
+    },
+    {
+      "path": "DATA_PROVENANCE.md",
+      "bytes": 7527,
+      "sha256": "e991b14968be9b365b2a8720026a172aa236407b5624170af0a365845ca1a150",
+      "git_blob_sha": "c0979e6557b162eedbc6953107a90d1c3bc3ae99"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8803,
+      "sha256": "6a7bd3db11dd8f3eed1fc656c5f9c30a0d503002df45aff9106a534c27837706",
+      "git_blob_sha": "27f0e36f83ff23fc15aeedd7d2faaab888d706a2"
     },
     {
       "path": "analysis/bootstrap.json",
@@ -150,10 +162,64 @@
       "git_blob_sha": "123cb81d8e495b856ee1548340793df11cab4763"
     },
     {
-      "path": "DATA_PROVENANCE.md",
-      "bytes": 4958,
-      "sha256": "5504d872a8e4135a36528e05465066c95ff41e24765078bbac4bc15cddb94e45",
-      "git_blob_sha": "97655e61e415c26a1e6a78477aab2fcfd249af24"
+      "path": "engineering/FE_REFERENCE_METHODS.md",
+      "bytes": 26124,
+      "sha256": "37e6268cf63a868ab191ec6afe00d9bffd162249c2b85efb817d709640c843ea",
+      "git_blob_sha": "92963aa20cce1d16e0f47205d4f1c189382f84a2"
+    },
+    {
+      "path": "engineering/PACKAGE_README.md",
+      "bytes": 6055,
+      "sha256": "b42077a2235a2a889ba40420d70f316cfcb74000d1614420074a692082446244",
+      "git_blob_sha": "e41dc8485729c8b77864608297f18cd7e709e6ed"
+    },
+    {
+      "path": "engineering/README.md",
+      "bytes": 2474,
+      "sha256": "4906457606df7163e317780608f03791269d5d80f3e59caf1599cfe36de7c0a8",
+      "git_blob_sha": "91f4131d27d91ea506c3b3a316b6f8bf2d471fc6"
+    },
+    {
+      "path": "engineering/Supplementary_Software_1.zip",
+      "bytes": 5042308,
+      "sha256": "4df56b96fd2aa0d03383b03c5312661bae4b3c4f5c8f1b6edab37fed694c1253",
+      "git_blob_sha": "2f577edfc8be93b2a908f5eb10d844ea6792c5ad"
+    },
+    {
+      "path": "engineering/Supplementary_Software_1.zip.sha256",
+      "bytes": 96,
+      "sha256": "825117c8c2491b8b037fe93e6afbe3b89ed426807eda35d2972f5df2d8232b1b",
+      "git_blob_sha": "bbc1166fb4fb8a48ab00db9fa442fc507cf2ffe8"
+    },
+    {
+      "path": "engineering/THIRD_PARTY_DATA_NOTICE.txt",
+      "bytes": 2317,
+      "sha256": "5bac041f88e5d2a46907642bfd191264cf4b42b506765042a73a52dc9a948ce5",
+      "git_blob_sha": "20840eb271a85bb2616e1f516cdd794c5b3752d9"
+    },
+    {
+      "path": "engineering/publication_checks.json",
+      "bytes": 1168,
+      "sha256": "6d94b9f25ab6df87258b03b21adac0ab091f2c3838dafb005a6d617bb114c8ca",
+      "git_blob_sha": "93bd72056da06e76af39965132e455c005a29029"
+    },
+    {
+      "path": "engineering/raw_parse_verification.json",
+      "bytes": 5017,
+      "sha256": "2434e1a43b1826316c0b4fde12cc22e7c7e396ff738c7751e12c8ef66cf7da1f",
+      "git_blob_sha": "087a74fb43825c8a6066718be23c768505a3303f"
+    },
+    {
+      "path": "engineering/reference_cases.csv",
+      "bytes": 433,
+      "sha256": "733f17f333f070ab0e6ba9d139b4a4d66f066612e734fd80c2b8f978feab6da4",
+      "git_blob_sha": "fb723ae4f703b9a9a423f007554e0fceb410f751"
+    },
+    {
+      "path": "engineering/third_party/OPARA_288_original_dataset_metadata.txt",
+      "bytes": 21675,
+      "sha256": "fee3f2823189302857cbf9b33abb215a2b660664850b9899a202568a3233186a",
+      "git_blob_sha": "f90afa01c3b45de6883267c0dd065a82003c3fc9"
     },
     {
       "path": "figures/F01.svg",
@@ -256,12 +322,6 @@
       "bytes": 6574,
       "sha256": "5ce0802b13adc15969ef79989bb8a5050215cbdb4ed33f96eebeeaa109c781e2",
       "git_blob_sha": "ab57fb985f864df0222f0b713aa5c0b680714547"
-    },
-    {
-      "path": "README.md",
-      "bytes": 7285,
-      "sha256": "cb86dee8e8f49b04ead106314c1932ae129e35c434c822c4a727e6fc3a45abc6",
-      "git_blob_sha": "94eab77833ab5f25897636cc0c1b0aceb60539e7"
     },
     {
       "path": "reproduce.py",
@@ -444,10 +504,16 @@
       "git_blob_sha": "6bcb1e922d6b1d02dbe747c0240dfc811e18b89c"
     }
   ],
-  "file_count_excluding_manifest": 72,
+  "file_count_excluding_manifest": 82,
   "reproducible_omitted_outputs": [
     "models/*.joblib",
     "analysis/results.json",
     "figures/*.png"
-  ]
+  ],
+  "analysis_release_date": "2026-10-24",
+  "base_commit": "8ea5a07b946340919aa9c152273d5ad4594cba4c",
+  "native_fe_reference_available": true,
+  "new_FE_solver_runs": 0,
+  "new_ML_training_runs": 0,
+  "engineering_archive_sha256": "4df56b96fd2aa0d03383b03c5312661bae4b3c4f5c8f1b6edab37fed694c1253"
 }

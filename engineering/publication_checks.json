@@ -1,0 +1,23 @@
+{
+  "schema": "OPEN_FE_REFERENCE_PUBLICATION_CHECKS_V1",
+  "date": "2026-10-26",
+  "base_commit": "8ea5a07b946340919aa9c152273d5ad4594cba4c",
+  "canonical_dataset_rows": 9000,
+  "canonical_dataset_sha256": "cb0bb4d147649378d5282b611e133f75df48e40f5e5f30af70f6813e13ff287b",
+  "existing_data_analysis_code_tables_and_figures_byte_unchanged": true,
+  "package_sha256": "4df56b96fd2aa0d03383b03c5312661bae4b3c4f5c8f1b6edab37fed694c1253",
+  "package_bytes": 5042308,
+  "package_payload_hashes_verified": 182,
+  "package_zip_crc_passed": true,
+  "reference_case_count": 3,
+  "reference_cases_formal_qualification": false,
+  "historical_raw_parse_metrics_exact_matches": 15,
+  "historical_raw_parse_available_without_omitted_fields": false,
+  "portable_preparation_tested_by_package_builder": true,
+  "local_relative_document_links_checked": true,
+  "new_FE_solver_runs": 0,
+  "new_ML_fits": 0,
+  "old_analytical_lineage_evidence_retained": true,
+  "new_9000_row_native_FE_mapping_established": false,
+  "package_change_from_local_review_copy": "Only README minimum Python version and its manifest entry; original copied source/evidence unchanged."
+}

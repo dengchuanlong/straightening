@@ -1,0 +1,4 @@
+case_id,selected_stroke_mm,recorded_initial_error_mm,recorded_final_error_mm,qualified_for_formal_dataset,execution_mode
+OPTVAL_B_B0001_V001,14.641792,5.347280639398473,0.11991514155457911,False,warm_multiframe_continuation
+OPTVAL_B_P0008_V001,8.103878,3.465323155821532,0.11518078590588862,False,warm_multiframe_continuation
+OPTVAL_B_R0004_V001,15.238613,6.513006470097734,0.14039192416958007,False,warm_multiframe_continuation

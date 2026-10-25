@@ -1,0 +1,34 @@
+THIRD-PARTY DATA ATTRIBUTION AND CONDITIONS
+
+Original dataset authors: Tom Schneider, Jens Gibmeier and Markus Kästner.
+Publication year: 2024.
+Original title: Experimental analysis of residual stress evolution under cyclic mechanical
+loading in 42CrMo4+QT (1.7225) including parametrization data.
+Repository identifier: OPARA-288.
+Dataset DOI and source: https://doi.org/10.25532/OPARA-288
+Official repository record: https://opara.zih.tu-dresden.de/xmlui/handle/123456789/6098?locale-attribute=en
+Original licence: Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0), https://creativecommons.org/licenses/by-nc/4.0/
+Full original metadata/licence text is preserved byte-for-byte in
+third_party/OPARA_288_original_dataset_metadata.txt. Its original text encoding is
+retained; the authors' name Kästner is spelled with an umlaut in this notice.
+
+Scope of derived files in this package:
+The selected-B PUBLIC0007_CORE004_SELECTED_B_V002 comparison CSV/JSON combines
+the reference implementation's FE predictions with OPARA specimen 0007 force and
+DIC observations. Transformations include original-time-point alignment/interpolation,
+force-error calculations, geometric true-strain/profile comparisons and derived summary
+metrics. The FE model, its locally identified CHAB3-Voce material, comparisons and
+interpretation are this study's work, not the original authors' model or endorsement.
+The material identification uses selected OPARA characterization records, as documented
+in the retained provenance/data_usage files. Raw characterization and specimen CSVs
+are not redistributed here. Historical computed comparison files are copied unchanged;
+this package performs no new FE solve or material fit.
+
+Retain this attribution, original-source and licence links, and the indication of
+derivation when reusing the OPARA material. Its NonCommercial restriction and other
+licence conditions remain applicable; permissions outside those conditions must come
+from the relevant rights holders. No additional restriction is placed on the original
+licensed material and no new authorization, blanket package licence, or relicensing
+of original data/software is asserted. The licence notice does not license ANSYS or
+third-party software. See the complete original licence for the governing terms.

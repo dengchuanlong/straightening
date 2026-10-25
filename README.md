@@ -5,6 +5,34 @@ validation-selected comparisons, component ablations, prediction intervals,
 learning curves and the numerical source data. The previous implementation is
 retained as `LegacyMGRE` in the comparison and in `scripts/legacy_benchmark.py`.
 
+## Open FE reference materials added 26 October 2026
+
+The existing 9,000-row learning table, fixed splits, prediction targets and
+reported ML results are unchanged. The separately traceable rectangular-bar FE
+reference project is now documented in [engineering/README.md](engineering/README.md).
+
+- [FE methods and numerical evidence](engineering/FE_REFERENCE_METHODS.md):
+  material parameters, geometry, contact, mesh, eleven load steps, extraction,
+  sampled-search and feasible-action definitions, and their limitations.
+- [Supplementary Software 1](engineering/Supplementary_Software_1.zip): original
+  source/material snapshots, three complete sampled-search records, selected
+  native inputs and receipts, benchmark comparisons, and a prepare-only wrapper.
+- [Case summary](engineering/reference_cases.csv),
+  [package instructions](engineering/PACKAGE_README.md), and
+  [archive checksum](engineering/Supplementary_Software_1.zip.sha256).
+
+The compact package supports source review and portable cold-core input
+preparation. It omits large native result/restart files and full field exports;
+it cannot independently replay the archived warm branches. Existing raw text
+exports were re-parsed locally and all 15 checked metrics matched their stored
+values. No new FE solve or ML refit was performed for this addition.
+
+These local cases do not establish a native FE origin for each of the current
+9,000 learning labels. The full numerical correspondence with the earlier
+explicitly synthetic analytical benchmark remains documented in
+[DATA_PROVENANCE.md](DATA_PROVENANCE.md). Neither historical provenance artifacts
+nor the mechanical scale used by MGRE have been deleted.
+
 ## Reproduce the paper analysis
 
 Use Python 3.12 and the pinned dependencies. The repository `.gitattributes`
@@ -136,5 +164,8 @@ figures to their generating code. A fresh run writes every prediction to
 
 ## Source and rights
 
-`RELEASE_MANIFEST.json` records hashes of the published files. The separate historical circular-beam study provides
+`RELEASE_MANIFEST.json` records hashes of the published files, including the
+new engineering archive. OPARA-derived comparison records retain their original
+CC BY-NC 4.0 attribution and conditions; see
+[engineering/THIRD_PARTY_DATA_NOTICE.txt](engineering/THIRD_PARTY_DATA_NOTICE.txt). The separate historical circular-beam study provides
 context.
