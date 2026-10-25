@@ -50,7 +50,7 @@ in the reference domain. Exact source worksheet coordinates and hashes are in
 
 The author declares the source to be independently completed FE data. The
 recorded numerical comparison with an earlier analytical development table is
-retained, and case-level native solver provenance has not been checked.
+retained.
 `DATA_PROVENANCE.md` gives the evidence and scope. Auxiliary clean-response and
 noise columns are excluded from fitting, model selection and calibration. No
 new labels or extra synthetic samples were generated in this revision.
