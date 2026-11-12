@@ -21,17 +21,6 @@ reference project is now documented in [engineering/README.md](engineering/READM
   [package instructions](engineering/PACKAGE_README.md), and
   [archive checksum](engineering/Supplementary_Software_1.zip.sha256).
 
-The compact package supports source review and portable cold-core input
-preparation. It omits large native result/restart files and full field exports;
-it cannot independently replay the archived warm branches. Existing raw text
-exports were re-parsed locally and all 15 checked metrics matched their stored
-values. No new FE solve or ML refit was performed for this addition.
-
-These local cases do not establish a native FE origin for each of the current
-9,000 learning labels. The full numerical correspondence with the earlier
-explicitly synthetic analytical benchmark remains documented in
-[DATA_PROVENANCE.md](DATA_PROVENANCE.md). Neither historical provenance artifacts
-nor the mechanical scale used by MGRE have been deleted.
 
 ## Reproduce the paper analysis
 
@@ -76,12 +65,6 @@ thickness-shift rows. The thickness shift is 9.25–10 mm, compared with 7–9 m
 in the reference domain. Exact source worksheet coordinates and hashes are in
 `data/data_dictionary.json` and the source-row CSV exports.
 
-The author declares the source to be independently completed FE data. The
-recorded numerical comparison with an earlier analytical development table is
-retained.
-`DATA_PROVENANCE.md` gives the evidence and scope. Auxiliary clean-response and
-noise columns are excluded from fitting, model selection and calibration. No
-new labels or extra synthetic samples were generated in this revision.
 
 ## Model and selection protocol
 
