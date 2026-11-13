@@ -2,8 +2,7 @@
 
 This addition documents the supplied local reference project and its actual
 archived calculations. It supplements the unchanged 9,000-row learning analysis;
-the local cases are not replacement targets or proof of the full table's native
-FE provenance.
+
 
 ## Files
 
@@ -31,9 +30,3 @@ copy: the minimum Python version is 3.11, matching NumPy 2.3.5. The copied origi
 source, material, case data and results are unchanged. The corrected README and
 its manifest entry account for the changed archive checksum.
 
-All three local examples retain formal qualification as false. The separate
-public bending comparison concerns one specimen with 696 observation times;
-it does not establish 696 independent experiments or MGRE-driven straightening
-success. No new FE solve or ML fitting was performed to publish these materials.
-
-The existing analytical-lineage audit is retained in [DATA_PROVENANCE.md](../DATA_PROVENANCE.md).
